@@ -1,0 +1,45 @@
+{
+    "key": "group_5ffe0dbf00b33",
+    "title": "FAQ List",
+    "fields": [
+        {
+            "key": "field_5ffe0dd8d827c",
+            "label": "FAQs List",
+            "name": "faqs_list",
+            "type": "checkbox",
+            "instructions": "Choose which FAQs to include on this page",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": [],
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "vertical",
+            "toggle": 0,
+            "return_format": "value",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_parent",
+                "operator": "==",
+                "value": "49236"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642700133
+}

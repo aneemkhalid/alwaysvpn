@@ -1,0 +1,174 @@
+// Button Styles
+
+
+.btn {   
+    max-width: 220px;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.btn-lg {
+
+    max-width: none;
+    width: auto;
+    min-width: 280px;
+    @media (max-width: 375px) {        
+        width: 100%;
+        min-width: auto; 
+    }
+}
+
+.btn-sm {
+    max-width: 150px;
+    width: 100%;
+}
+
+.btn-icon {  
+    &::after {
+        content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4999 3.33337L9.32492 4.50837L13.9749 9.16671H3.83325V10.8334H13.9749L9.32492 15.4917L10.4999 16.6667L17.1666 10L10.4999 3.33337Z' fill='white'/%3E%3C/svg%3E");
+        margin-left: 4px;  
+    }
+}
+
+.btn-primary {
+    background: $btn-primary-gradient;
+    border: none;
+    
+    &:hover {
+        background: $btn-primary-hover-gradient;
+    }
+    
+     &:focus {
+        background: $btn-primary-select-gradient;
+        box-shadow: none; 
+     }
+    
+      &.btn.disabled, &.btn:disabled {
+       background: $btn-disabled-background;
+       color: $btn-disabled-color;
+       //border-color:transparent;
+    }
+    
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            background: $btn-primary-select-gradient;
+
+          &:focus {
+            background: $btn-primary-select-gradient;
+          }
+        }
+    }
+    
+   
+}
+
+.btn-outline-primary  {
+    
+     &.btn-icon {  
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4999 3.33337L9.32492 4.50837L13.9749 9.16671H3.83325V10.8334H13.9749L9.32492 15.4917L10.4999 16.6667L17.1666 10L10.4999 3.33337Z' fill='%23FD3824'/%3E%3C/svg%3E%0A");         
+        }
+         
+        &:hover {
+           &::after { 
+            content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4999 3.33337L9.32492 4.50837L13.9749 9.16671H3.83325V10.8334H13.9749L9.32492 15.4917L10.4999 16.6667L17.1666 10L10.4999 3.33337Z' fill='white'/%3E%3C/svg%3E");
+            }   
+        }
+    }
+    
+    
+    
+    &:hover {
+        background: $btn-primary-hover-gradient;
+        border-color: transparent;
+    }
+    
+     &:focus {
+        background: $btn-primary-select-gradient;
+        box-shadow: none; 
+        //border-color: transparent;
+        color: #fff;
+     }
+    
+    &.btn.disabled, &.btn:disabled {
+       background: $btn-disabled-background;
+       color: $btn-disabled-color;
+       border-color:transparent;
+    }
+    
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            background: $btn-primary-select-gradient;
+            border-color: transparent;
+
+          &:focus {
+            background: $btn-primary-select-gradient;
+            border-color: transparent;
+            color: #fff;  
+          }
+        }
+    }
+}
+
+
+
+
+
+
+.btn-link {
+    color:$btn-link-color;
+    font-weight: 700;
+    
+    &:hover {
+        text-decoration: none;
+        color:$btn-link-hover-color;
+        background: $btn-link-hover-background;
+    }  
+    
+     &:focus {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+            color:$btn-link-hover-color;
+          }
+   &:active,
+        &.active {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+    }
+    &:not(:disabled):not(.disabled) {
+
+        &:active,
+        &.active {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+            
+            
+          &:focus {
+            background: $btn-link-active-background;
+            border-color: transparent;
+            text-decoration: none;
+           color:$btn-link-hover-color;
+          }
+        }
+    }
+    
+    &.btn-icon {  
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4999 3.33337L9.32492 4.50837L13.9749 9.16671H3.83325V10.8334H13.9749L9.32492 15.4917L10.4999 16.6667L17.1666 10L10.4999 3.33337Z' fill='%23006ade'/%3E%3C/svg%3E%0A");         
+        }
+    }
+
+}
+
+.btn-icon.btn.disabled, .btn-icon.btn:disabled {  
+        &::after {
+            content: url("data:image/svg+xml,%3Csvg width='17' height='16' viewBox='0 0 17 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4999 3.33337L9.32492 4.50837L13.9749 9.16671H3.83325V10.8334H13.9749L9.32492 15.4917L10.4999 16.6667L17.1666 10L10.4999 3.33337Z' fill='%23000000' fill-opacity='0.2'/%3E%3C/svg%3E");       
+        }
+    }

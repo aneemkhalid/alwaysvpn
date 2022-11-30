@@ -1,0 +1,92 @@
+{
+    "key": "group_5ff77e4f2e2a3",
+    "title": "Article Author Dropdown",
+    "fields": [
+        {
+            "key": "field_61f2d7df73273",
+            "label": "Author Type",
+            "name": "author_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "21",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Author": "Author",
+                "Editor": "Editor"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5ff77e7068c7e",
+            "label": "Article Authors Dropdown",
+            "name": "article_authors_dropdown",
+            "type": "select",
+            "instructions": "Choose the author of this article",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "53428": "Anna Ellison",
+                "55164": "Dan Ruzich",
+                "49559": "James Milin-Ashmore",
+                "51639": "Marla Milano",
+                "49554": "Paula Novo",
+                "52397": "Precious Gellada"
+            },
+            "default_value": false,
+            "allow_null": 1,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "page-resource.php"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-methodology.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1658420192
+}

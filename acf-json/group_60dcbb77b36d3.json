@@ -1,0 +1,221 @@
+{
+    "key": "group_60dcbb77b36d3",
+    "title": "CTA Button",
+    "fields": [
+        {
+            "key": "field_61f0377d1d0c3",
+            "label": "CTA Type",
+            "name": "cta_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "VPN": "VPN",
+                "Other": "Other"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "VPN",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60ddd9ac542a0",
+            "label": "Select VPN",
+            "name": "select_vpn",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f0377d1d0c3",
+                        "operator": "==",
+                        "value": "VPN"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "select_vpn",
+                "id": ""
+            },
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_60dddd5257306",
+            "label": "Select Target Link",
+            "name": "select_target_link",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f0377d1d0c3",
+                        "operator": "==",
+                        "value": "VPN"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "trc_link",
+                "id": "select_target_link"
+            },
+            "choices": [],
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_60ddd9e48d06b",
+            "label": "Include Link to Review",
+            "name": "link_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f0377d1d0c3",
+                        "operator": "==",
+                        "value": "VPN"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "vpn_link": "No",
+                "tracking_link": "Yes"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_61f4400522e13",
+            "label": "AddOn Name",
+            "name": "addon_name",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f18e8e01392",
+                        "operator": "==",
+                        "value": "affiliate"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61f03835d2546",
+            "label": "Link",
+            "name": "other_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f0377d1d0c3",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_61f18e8e01392",
+            "label": "Link Type",
+            "name": "other_type",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_61f0377d1d0c3",
+                        "operator": "==",
+                        "value": "Other"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "internal": "Internal",
+                "affiliate": "Affiliate",
+                "external": "External"
+            },
+            "allow_null": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/standalone-cta-button"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1643911866
+}

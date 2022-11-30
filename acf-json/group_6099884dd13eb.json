@@ -1,0 +1,234 @@
+{
+    "key": "group_6099884dd13eb",
+    "title": "Coupon Promotion",
+    "fields": [
+        {
+            "key": "field_6099886bf0893",
+            "label": "Coupon Promotion",
+            "name": "coupon_promotion",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60998983f0898",
+                    "label": "VPN Provider",
+                    "name": "vpn_provider",
+                    "type": "select",
+                    "instructions": "Select VPN Provider",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "50767": "AirVPN Review",
+                        "50793": "Astrill VPN Review",
+                        "50422": "Atlas VPN Review",
+                        "50462": "Avast Secureline VPN Review",
+                        "49667": "AVG Secure VPN Review",
+                        "49663": "Betternet VPN Review",
+                        "50790": "BTGuard VPN Review",
+                        "50805": "Celo VPN Review",
+                        "49633": "CyberGhost VPN Review",
+                        "49664": "ExpressVPN Review",
+                        "50904": "hide.me VPN Review",
+                        "50407": "HMA VPN Review",
+                        "50617": "Hola VPN Review",
+                        "49665": "Hotspot Shield VPN Review",
+                        "49545": "IPVanish VPN Review",
+                        "50799": "Ivacy VPN Review",
+                        "50797": "IVPN Review",
+                        "50397": "Mullvad VPN Review",
+                        "49596": "NordVPN Review",
+                        "49653": "Norton Secure VPN Review",
+                        "49666": "Private Internet Access VPN Review",
+                        "50421": "ProtonVPN Review",
+                        "50465": "PureVPN Review",
+                        "50791": "Speedify VPN Review",
+                        "53078": "StrongVPN Review",
+                        "49650": "Surfshark VPN Review",
+                        "50470": "TorGuard VPN Review",
+                        "50903": "TunnelBear VPN Review",
+                        "49654": "Turbo VPN Review",
+                        "50792": "VirtualShield VPN Review",
+                        "50419": "VyprVPN Review",
+                        "50423": "Whoer VPN Review",
+                        "50905": "Windscribe VPN Review",
+                        "50469": "ZenMate VPN Review"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_609988a8f0895",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "Enter title (60 character limit)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 60
+                },
+                {
+                    "key": "field_60998878f0894",
+                    "label": "Icon",
+                    "name": "icon",
+                    "type": "image",
+                    "instructions": "Upload icon",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_60998918f0897",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "textarea",
+                    "instructions": "Enter description (98 character limit)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": 98,
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_609988baf0896",
+                    "label": "Discount detail",
+                    "name": "discount_detail",
+                    "type": "text",
+                    "instructions": "Enter discount detail (15 character limit)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": 15
+                },
+                {
+                    "key": "field_60998e9746a64",
+                    "label": "CTA Link",
+                    "name": "cta_link",
+                    "type": "text",
+                    "instructions": "Enter CTA link",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60998a0ef0899",
+                    "label": "Legal copy",
+                    "name": "legal_copy",
+                    "type": "textarea",
+                    "instructions": "Enter legal copy (optional)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 4,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_60998b0a12b74",
+                    "label": "Expiration date",
+                    "name": "expiration_date",
+                    "type": "date_time_picker",
+                    "instructions": "Select the date and time when this coupon will expire (all times are calculated as Eastern timezone)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "display_format": "Y-m-d H:i:s",
+                    "return_format": "Y-m-d H:i:s",
+                    "first_day": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "coupon_promotions"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642699205
+}

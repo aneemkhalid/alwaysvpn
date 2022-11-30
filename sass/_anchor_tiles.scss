@@ -1,0 +1,68 @@
+// Anchor Tiles
+
+.anchor-tiles-wrap {
+	+ {
+		.disclaimer {
+			margin-top: 0;
+		}
+	}
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 21px;
+	.anchor-tile {
+		border-radius: 10px;
+		box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+		background: #fff;
+		width: 24%;
+		padding: 16px 10px;
+		margin-bottom: 9px;
+		border-top: 3px solid transparent;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		&:hover {
+			background: #ececec;
+			&:before {
+				background: #006ade;
+			}
+		}
+		&:before {
+			position: absolute;
+			content: '';
+			background: transparent;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			height: 3px;
+			width: 100%;
+		
+		}
+		img {
+			margin-bottom: 8px;
+			width: 48px;
+			height: 48px;
+		}
+		h5 {
+			text-align: center;
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.anchor-tiles-wrap {
+		.anchor-tile {
+			width: 48.5%;
+			padding: 8px 10px 11px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+    .anchor-tiles-wrap .anchor-tile {
+        padding:8px 16px 11px;
+    }
+    
+}

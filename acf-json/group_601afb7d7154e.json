@@ -1,0 +1,250 @@
+{
+    "key": "group_601afb7d7154e",
+    "title": "Homepage Banner Settings",
+    "fields": [
+        {
+            "key": "field_601c19c2ccd3b",
+            "label": "Banner Header",
+            "name": "banner_header",
+            "type": "text",
+            "instructions": "Enter heading to overlay on the banner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter heading",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601afbd5453ef",
+            "label": "Desktop Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_601affec453f3",
+            "label": "Banner Text: Desktop",
+            "name": "banner_text_desktop",
+            "type": "textarea",
+            "instructions": "Enter text to overlay on the banner in the desktop view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_601affc2453f0",
+            "label": "Tablet Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_601b0046453f4",
+            "label": "Frontpage Header: Tablet",
+            "name": "frontpage_header_tablet",
+            "type": "image",
+            "instructions": "Upload header image for tablet view (1000 x 430)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_601b0085453f5",
+            "label": "Banner Text: Tablet",
+            "name": "banner_text_tablet",
+            "type": "textarea",
+            "instructions": "Enter text to overlay on the banner in the tablet view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_601affd3453f1",
+            "label": "Mobile Banner",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_601b00b7453f6",
+            "label": "Frontpage Header: Mobile",
+            "name": "frontpage_header_mobile",
+            "type": "image",
+            "instructions": "Upload header image for tablet view (640 x 430)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_601b00e5453f7",
+            "label": "Banner Text: Mobile",
+            "name": "banner_text_mobile",
+            "type": "textarea",
+            "instructions": "Enter text to overlay on the banner in the mobile view",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_601affe1453f2",
+            "label": "Banner Button",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_601b0127453f8",
+            "label": "Banner Button Text",
+            "name": "banner_button_text",
+            "type": "text",
+            "instructions": "Enter the text that should appear on the button overlayed on the banner",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter button text",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601b013f453f9",
+            "label": "Banner Button Link",
+            "name": "banner_button_link",
+            "type": "text",
+            "instructions": "Enter the link for the button overlayed on the banner. Note: Do not include domain (e.g., \"\/reviews\/cyberghost\").",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter button link",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642700122
+}

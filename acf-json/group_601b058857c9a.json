@@ -1,0 +1,662 @@
+{
+    "key": "group_601b058857c9a",
+    "title": "Best VPNs by Category Box",
+    "fields": [
+        {
+            "key": "field_601b05960098b",
+            "label": "Best VPNs Title",
+            "name": "best_vpns_title",
+            "type": "text",
+            "instructions": "Enter title for the Best VPNs by Category section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601b05ae0098c",
+            "label": "Best VPNs Description",
+            "name": "best_vpns_description",
+            "type": "textarea",
+            "instructions": "Enter description for the Best VPNs by Category section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_601b05bf0098d",
+            "label": "Best VPNs Group",
+            "name": "best_vpns_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_601b05d70098e",
+                    "label": "Best VPNs 1",
+                    "name": "best_vpns_1",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b05ea0098f",
+                            "label": "Best VPN Title",
+                            "name": "best_vpn_title",
+                            "type": "text",
+                            "instructions": "Enter a Best VPN title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b060c00990",
+                            "label": "Best VPN Description",
+                            "name": "best_vpn_description",
+                            "type": "textarea",
+                            "instructions": "Enter a Best VPN description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_601b062700991",
+                            "label": "Best VPN Link",
+                            "name": "best_vpn_link",
+                            "type": "link",
+                            "instructions": "Enter a Best VPN link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
+                            "key": "field_601b064000992",
+                            "label": "Best VPN Icon",
+                            "name": "best_vpn_icon",
+                            "type": "image",
+                            "instructions": "Upload a Best VPN icon",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_601b066600993",
+                    "label": "Best VPNs 2",
+                    "name": "best_vpns_2",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b066600994",
+                            "label": "Best VPN Title",
+                            "name": "best_vpn_title",
+                            "type": "text",
+                            "instructions": "Enter a Best VPN title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b066600995",
+                            "label": "Best VPN Description",
+                            "name": "best_vpn_description",
+                            "type": "textarea",
+                            "instructions": "Enter a Best VPN description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_601b066600996",
+                            "label": "Best VPN Link",
+                            "name": "best_vpn_link",
+                            "type": "link",
+                            "instructions": "Enter a Best VPN link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
+                            "key": "field_601b066600997",
+                            "label": "Best VPN Icon",
+                            "name": "best_vpn_icon",
+                            "type": "image",
+                            "instructions": "Upload a Best VPN icon",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_601b066800998",
+                    "label": "Best VPNs 3",
+                    "name": "best_vpns_3",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b066800999",
+                            "label": "Best VPN Title",
+                            "name": "best_vpn_title",
+                            "type": "text",
+                            "instructions": "Enter a Best VPN title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b06680099a",
+                            "label": "Best VPN Description",
+                            "name": "best_vpn_description",
+                            "type": "textarea",
+                            "instructions": "Enter a Best VPN description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_601b06680099b",
+                            "label": "Best VPN Link",
+                            "name": "best_vpn_link",
+                            "type": "link",
+                            "instructions": "Enter a Best VPN link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
+                            "key": "field_601b06680099c",
+                            "label": "Best VPN Icon",
+                            "name": "best_vpn_icon",
+                            "type": "image",
+                            "instructions": "Upload a Best VPN icon",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_601b06690099d",
+                    "label": "Best VPNs 4",
+                    "name": "best_vpns_4",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b06690099e",
+                            "label": "Best VPN Title",
+                            "name": "best_vpn_title",
+                            "type": "text",
+                            "instructions": "Enter a Best VPN title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b06690099f",
+                            "label": "Best VPN Description",
+                            "name": "best_vpn_description",
+                            "type": "textarea",
+                            "instructions": "Enter a Best VPN description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_601b0669009a0",
+                            "label": "Best VPN Link",
+                            "name": "best_vpn_link",
+                            "type": "link",
+                            "instructions": "Enter a Best VPN link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
+                            "key": "field_601b0669009a1",
+                            "label": "Best VPN Icon",
+                            "name": "best_vpn_icon",
+                            "type": "image",
+                            "instructions": "Upload a Best VPN icon",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_601b066b009a2",
+                    "label": "Best VPNs 5",
+                    "name": "best_vpns_5",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b066b009a3",
+                            "label": "Best VPN Title",
+                            "name": "best_vpn_title",
+                            "type": "text",
+                            "instructions": "Enter a Best VPN title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b066b009a4",
+                            "label": "Best VPN Description",
+                            "name": "best_vpn_description",
+                            "type": "textarea",
+                            "instructions": "Enter a Best VPN description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_601b066b009a5",
+                            "label": "Best VPN Link",
+                            "name": "best_vpn_link",
+                            "type": "link",
+                            "instructions": "Enter a Best VPN link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
+                            "key": "field_601b066b009a6",
+                            "label": "Best VPN Icon",
+                            "name": "best_vpn_icon",
+                            "type": "image",
+                            "instructions": "Upload a Best VPN icon",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                },
+                {
+                    "key": "field_601b066d009a7",
+                    "label": "Best VPNs 6",
+                    "name": "best_vpns_6",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "33",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b066d009a8",
+                            "label": "Best VPN Title",
+                            "name": "best_vpn_title",
+                            "type": "text",
+                            "instructions": "Enter a Best VPN title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b066d009a9",
+                            "label": "Best VPN Description",
+                            "name": "best_vpn_description",
+                            "type": "textarea",
+                            "instructions": "Enter a Best VPN description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_601b066d009aa",
+                            "label": "Best VPN Link",
+                            "name": "best_vpn_link",
+                            "type": "link",
+                            "instructions": "Enter a Best VPN link",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url"
+                        },
+                        {
+                            "key": "field_601b066d009ab",
+                            "label": "Best VPN Icon",
+                            "name": "best_vpn_icon",
+                            "type": "image",
+                            "instructions": "Upload a Best VPN icon",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_601c3b5a5bfa7",
+            "label": "Best VPNs Anchor Link",
+            "name": "best_vpns_anchor_link",
+            "type": "text",
+            "instructions": "Enter a hyphen-separated anchor link for this section (e.g. best-vpns-by-category)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter anchor link",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/best-vpns"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642699245
+}

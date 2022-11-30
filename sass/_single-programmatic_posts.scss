@@ -1,0 +1,206 @@
+.vpn_main {
+	h1 {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	.author-wrapper{
+		.author-info {
+			margin-bottom: 31px;
+			img {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin-right: 15px;
+			}
+			p {
+				font-size: 14px !important;
+				font-weight: normal;
+				line-height: 1.43 !important;
+				letter-spacing: normal;
+				color: #151515;
+				margin: 0;
+		
+				span {
+					display: block;
+					color: #686868;
+				}
+			}
+		}
+	}
+	
+}
+
+.programmatic-content{
+
+	.feat-img-cont{
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.disclaimer-cont{
+		.programmatic-disclaimer{
+			font-size: 12px;
+			margin-top: 16px;
+		}
+
+		&.no-feat-img{
+			background-color: $grey6;
+			padding: 15px;
+
+			.programmatic-disclaimer{
+				margin: 0;
+				font-size: $p-font-size;
+			}
+		}
+	}
+
+	.intro-text-cont{
+		margin-bottom: 40px;
+	}
+
+	// how to use a vpn
+	.how-to-cont{
+		background-color: $blue5;
+		padding: 32px;
+		margin-bottom: 40px;
+
+		.how-to-title{
+			margin-bottom: 25px;
+		}
+		.how-to-item{
+
+			.item-num{
+				background: white;
+				height: 28px;
+				width: 28px;
+				border-radius: 100%;
+				margin-right: 15px;
+				color: $secondary;
+			}
+		}
+		
+	}
+
+	.why-cont{
+		margin-bottom: 40px;
+	}
+
+	.winner-cont{
+		.winner-intro{
+			margin-bottom: 40px;
+		}
+
+		// winner callout
+		.winner-callout{
+			border: 2px solid $secondary;
+			filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.246013));
+			border-radius: 5px;
+			background: $white;
+			margin-bottom: 40px;
+
+			.title-bar{
+				background-color: $secondary;
+				width: 100%;
+				padding: 15px;			
+
+				.award-title{
+					color: $white;
+					font-size: 1.8rem;
+				}
+				.award-icon{
+					margin-right: 15px;
+				}
+			}
+
+			.content-cont{
+				padding: 32px;
+
+				.winner-logo{
+					width: 388px;
+					margin-bottom: 32px;
+				}
+				.winner-copy{
+					text-align: center;
+				}
+			}
+		}
+	}
+	
+
+
+	.vpn-list{
+		margin-bottom: 40px;
+
+		.vpn{
+
+			// programmatic card
+			.programmatic-vpn-card{
+				padding: 25px;
+				box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+				background-color: $white;
+				width: 100%;
+				border-radius: 10px;
+
+				.img-permalink{
+					flex-basis: 140px;
+
+					img{
+						width: 140px;
+						border-radius: 7px;
+						max-width: unset;
+					}
+				}
+
+				.vpn-content{
+					padding-left: 30px;
+					flex-basis: calc(100% - 340px);
+					width: unset;
+				}
+
+				.vpn-card-btn{
+					padding-left: 30px;
+					a.btn{
+						padding: 15px 25px;
+						white-space: pre-wrap;
+						word-wrap: break-word;
+						white-space: normal;
+						display:block;
+						font-size: $p-font-size;
+					}
+				}
+
+				@include media-breakpoint-down(sm) {
+
+					.img-permalink{
+						margin-bottom: 15px;
+					}
+					.vpn-content{
+						margin-bottom: 15px;
+						flex-basis: 100%;
+						padding-left: 0;
+						align-self: flex-start;
+
+						ul{
+							padding-left: 15px;
+						}
+					}
+					.vpn-card-btn{
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	.conclusion-cont{
+		margin-bottom: 40px;
+	}
+
+	.faq-cont{
+		.faq-item{
+			margin-bottom: 30px;
+		}
+	}
+}

@@ -1,0 +1,111 @@
+{
+    "key": "group_601b08430cbae",
+    "title": "VPN Comparisons Box",
+    "fields": [
+        {
+            "key": "field_601b084335382",
+            "label": "VPN Comparisons Title",
+            "name": "vpn_comparisons_title",
+            "type": "text",
+            "instructions": "Enter title for the VPN Comparisons section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601b08433542e",
+            "label": "VPN Comparisons Description",
+            "name": "vpn_comparisons_description",
+            "type": "textarea",
+            "instructions": "Enter description for the VPN Comparisons section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_61f05a6d04e5b",
+            "label": "VPN Comparison Image",
+            "name": "vpn_comparison_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_61f2b3fdb6659",
+            "label": "Select VPN's for Pills",
+            "name": "select_vpns_for_pills",
+            "type": "relationship",
+            "instructions": "Select VPN's that will be visible as pills for comparison.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/vpn-comparisons"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1643296213
+}

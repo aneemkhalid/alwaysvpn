@@ -1,0 +1,88 @@
+{
+    "key": "group_627a7382ca35f",
+    "title": "Compact Comparison Block",
+    "fields": [
+        {
+            "key": "field_627a73871de69",
+            "label": "Compact Comparisons Title",
+            "name": "compact_comparisons_title",
+            "type": "text",
+            "instructions": "Enter title for the Compact Comparisons section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_627a73871a3ff",
+            "label": "Compact Comparisons Description",
+            "name": "compact_comparisons_description",
+            "type": "textarea",
+            "instructions": "Enter description for the Compact Comparisons section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_627a738712f19",
+            "label": "Select VPN's for Pills",
+            "name": "select_compact_vpns_for_pills",
+            "type": "relationship",
+            "instructions": "Select VPN's that will be visible as pills for comparison.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/compact-comparison"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1652213759
+}

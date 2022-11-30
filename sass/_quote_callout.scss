@@ -1,0 +1,44 @@
+//Quote Callout
+
+
+.quote-callout blockquote.quote-text-wrapper{
+    background-color: #E5F4FF;
+    padding: 24px 36px 24px 48px;
+    border-radius: 10px;
+    width: 100%;
+    border-left: 0;
+}
+.quote-callout blockquote.quote-text-wrapper p.quote{
+    margin-bottom: 12px;
+    position: relative;
+}
+.quote-callout blockquote.quote-text-wrapper p.quote span{
+    color: #006ADE;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    font-family: $headings-font-family;
+}
+.quote-callout blockquote.quote-text-wrapper p.quote span.open-quote{
+    font-size: 48px;
+    line-height: 38px;
+    position: absolute;
+    left: -30px;
+    font-weight: 700;
+    top: 0;
+}
+.quote-callout blockquote.quote-text-wrapper p.quote span.close-quote{
+    position: absolute;
+    bottom: -6px;
+    font-size: 48px;
+    line-height: 38px;
+    padding-left: 3px;
+}
+.quote-callout blockquote.quote-text-wrapper p.cite{
+    display: block;
+    color: #006ADE !important;
+    font-size: 16px !important;
+    line-height: 25px;
+    font-weight: 400;
+    font-family: $font-family-sans-serif;
+}

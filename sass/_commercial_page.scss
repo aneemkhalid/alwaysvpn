@@ -1,0 +1,472 @@
+.best-vpn-template-page-commercial, .page-template-page-best-vpn-new {
+  .disclaimer {
+    display: block;
+    margin-top: 0;
+  }
+  .hero {
+    @media(min-width: 640px) {
+      margin-bottom: 2.5rem;
+    }
+    @media(min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+    h1 {
+      @media(min-width: 1200px) {
+        line-height: 54px;
+      }
+    }
+    .author-wrapper, .author-info {
+      @media(min-width: 1200px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .comparison_image {
+    margin-top: 0;
+    img, iframe {
+      max-width: 340px;
+      margin: 0 auto;
+      z-index: 1;
+      padding: 40px 0;
+      filter: drop-shadow(0px 14px 24px #8293A0);
+      @media(min-width: 1200px) {
+        padding: 64px 0;
+        margin-left: 0;
+      }
+    }
+    @media(min-width: 1200px) {
+      width: 50%;
+      flex-shrink: 0;
+      order: 1;
+      margin-left: 0;
+      left: auto;
+      right: 0;
+    }
+  }
+  .reviews_main {
+    @media(min-width: 1200px) {
+      order: 2;
+      flex: 1 1 0%;
+      margin-left: 10px;
+    } 
+  }
+  .blue-bg-banner {
+    background-color: $lightBlue2;
+    display: none;
+    z-index: 0;
+    width: 60%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 20px; /* 24px */
+    border-bottom-right-radius: 20px; /* 24px */
+    @media (min-width: 640px) {
+      display: block;
+    }
+    @media(min-width: 1200px) {
+      width: 50vw;
+      right: 120px;
+      left: auto;
+    }
+  }
+  .vpn-table-list {
+    @media(min-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+      left: 0;   
+    }
+    .scroll-text {
+      font-size: 14px;
+      padding-right: 15px;
+    }
+    .table-scroll {
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+    .table-scroll-container {
+      flex-grow: 1;
+      overflow: hidden;
+      position: relative;
+      .gradient-right {
+        position: absolute;
+        height: 100%;
+        width: 64px;
+        background: linear-gradient(276.38deg, #FAFAFA 5.31%, rgba(250, 250, 250, 0) 95.26%);
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 20;
+        @media screen and (min-width:768px) {
+          display: none;
+        }
+      }
+    }
+    .carousel-cell {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      margin-right: 0px;
+    }
+    .index-th {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+    .rating-title {
+      width: 75%;
+      line-height: 1;
+    }
+    .index-td {
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+        font-size: 20px;
+      }
+    }
+    .vpn-table-rating {
+      svg {
+        fill: $secondary;
+      }
+    }
+    .vpn-table-logo {
+      img {
+        width: auto;
+        height: 100%;
+        max-height: 36px;
+        object-fit: contain;
+      }
+    }
+    table {
+      border-collapse: collapse;
+      border: 0;
+    }
+    tr {
+      border-bottom: 1px solid #EAEAEA;
+    }
+    th, td{
+      border: 0;
+    }
+    td {
+      padding: 20px !important;
+      padding-left: 0 !important;
+      text-align: left;
+      vertical-align: middle;
+    }
+    thead {
+      tr {
+        border-radius: 10px;
+        border-bottom: 0;
+      }
+      th {
+        padding: 15px !important;
+        padding-left: 0px !important;
+        vertical-align: middle;
+      }
+    }
+
+    tbody {
+      tr {
+        min-height: 70px;
+        height: 70px;
+        cursor: pointer;
+        &:hover {
+          background-color: $lightBlue;
+          border-radius: 10px;
+        }
+      }
+      td:nth-child(2) {
+        padding-left: 15px !important;
+        line-height: 1.25;
+      }
+      td:nth-child(1) {
+        width: 35px;
+        min-width: 35px;
+        padding-left: 15px !important;
+      }
+    }
+    thead, tbody {
+      th:nth-child(1) {
+        width: 35px;
+        min-width: 35px;
+        padding-left: 15px !important;
+      }
+      th:nth-child(2) {
+        width: 200px;
+        min-width: 200px;
+        text-align: left;
+        padding-left: 15px !important;
+        @media (min-width: 768px) {
+          width: 225px;
+          min-width: 225px;
+        }
+        @media (min-width: 992px) {
+          width: 250px;
+          min-width: 250px;
+        }
+      }
+      th:nth-child(3) {
+        width: 125px;
+        min-width: 125px;
+        text-align: left;
+        @media (min-width: 992px) {
+          width: 130px;
+          min-width: 130px;
+        }
+      }
+      th:nth-child(4), th:nth-child(5) {
+        width: 160px;
+        min-width: 160px;
+        text-align: left;
+        @media (min-width: 992px) {
+          width: 175px;
+          min-width: 175px;
+        }
+      }
+    }
+  }
+  .vpn-list {
+    gap: 40px;
+    max-width: 530px;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      max-width: none;
+      margin: 0;
+    }
+    .vpn-item {
+      border-radius: 10px;
+      box-shadow: $box-shadow-card;
+      .top-container {
+        padding: 24px 16px 0 16px;
+      }
+      .compare-vpn {
+        border: 0;
+        background: none;
+        @media (min-width: 768px) {
+          padding-right: 15px !important;
+        }
+        .vpn-add-to-compare {
+          .add-icon {
+            flex-shrink: 0;
+            border: 1.5px solid $secondary;
+            //background: $secondary;
+            border-radius: 9999px;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &.is-set {
+            .add-icon {
+              background: $secondary;
+            }
+          }
+        }
+      }
+      .vpn-name {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 8px;
+        flex-wrap: wrap;
+      }
+      .flag {
+        color: $secondary;
+        font-size: 18px;
+        padding: 16px;
+        background: $lightBlue2;
+        border-top-left-radius: 10px; /* 24px */
+        border-top-right-radius: 10px; /* 24px */
+      }
+      .bot-container {
+        padding: 16px;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+      .vpn-logo {
+        img {
+          width: 100%;
+          height: 100px;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 10px;
+          @media (min-width: 576px) {
+            height: 150px;
+          }
+        }
+      }
+      .datapoints {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        .datapoint {
+          .value {
+            color: $blue3;
+          }
+          .title {
+            line-height: 1;
+          }
+        }
+      }
+      .rating-bar {
+        .review-link {
+          display: inline-block;
+          font-size: 14px;
+        }
+      }
+      .view-details-btn {
+        background-color: $lightGrey;
+        padding: 16px;
+        width: 100%;
+        appearance: none;
+        border: 0;
+        color: $secondary;
+        border-bottom-left-radius: 10px; /* 24px */
+        border-bottom-right-radius: 10px; /* 24px */
+        span {
+          line-height: 1;
+        }
+      }
+      .args-container {
+        ul.dashed {
+          list-style: none;
+          padding-left: 0;
+          //text-indent: -28px; /* key property */
+          //margin-left: 28px; /* key property */
+        }
+        ul.dashed > li {
+          //text-indent: 3px;
+          padding-bottom: 8px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+        ul.dashed > li:before {
+          content: "-";
+          margin-left: 3px;
+          margin-right: 17px;
+        }
+        ul.dashed p {
+          margin-bottom: 0;
+        }
+      }
+      .coupon-container {
+        background: $lightBlue2;
+        border-radius: 10px;
+        .discount {
+          color: $blue3;
+        }
+        @media (min-width: 768px) {
+          margin: 0 15px;
+          .coupon-title {
+            font-size: 20px;
+          }
+        }
+      }
+      .desktop {
+        .vpn-logo {
+          img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 10px;
+          }
+        }
+        .datapoints {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+        .right-content {
+          border-left: 1px solid $lightGrey3;
+        }
+      }
+    }
+  }
+
+  //Show right at later breakpoint
+  @media screen and (max-width:1200px) {
+    .main_wrap {
+      .content {
+        #ez-toc-container {
+          display: block;
+          width: 100%;
+          margin-bottom: 30px;
+          border: 0;
+          float: unset;
+        }
+      }
+      >.container {
+        .left {
+          padding-right: 0;
+          width: 100%;
+        }
+        .right {
+          display: none;
+        }
+      }
+    }
+    .main_wrap.side_nav {
+      >.container {
+        display: block;
+        .right {
+          display: block;
+          width: 100%;
+          padding-left: 0;
+          max-width: 425px;
+          margin: 0 auto;
+          .sidenav_inner {
+            position: static;
+            padding-top: 10px;
+          }
+        }
+      }
+      .middle {
+        width: 100%;
+        max-width: 768px;
+        margin: 0 auto;
+      }
+    }
+    .right {
+      .toc_wrapper {
+        .visit-vpn {
+          display: none;
+        }
+      }
+    }
+    .right.stick {
+      .toc_wrapper {
+        width: 100%;
+        position: static;
+        top: unset;
+      }
+    }
+    .mobile_floating_cta.activated {
+      bottom: 0;
+      opacity: 1;
+  
+    }
+  }
+  .content-top {
+    .commercial-top-block {
+      display: block !important;
+    }
+    .commercial-bottom-block {
+      display: none !important;
+    }
+  }
+  .content-bottom {
+    .commercial-top-block {
+      display: none !important;
+    }
+    .commercial-bottom-block {
+      display: block !important;
+    }
+  }
+  .main_wrap {
+    padding-bottom: 0;
+  }
+}

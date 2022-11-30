@@ -1,0 +1,184 @@
+// Get in Touch Form
+
+.get-in-touch{
+	.with_frm_style{
+		form{
+			display: flex;
+			flex-direction: column-reverse;
+			>div{
+				background-color: $lightBlue; 
+				border: 0;
+				box-shadow: $primaryBoxShadow7;
+				border-radius: 20px;
+				margin-bottom: 40px;
+			}
+			.frm_message{
+				background-color: $lightBlue; 
+				height: 400px;
+				padding:50px 30px 40px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				border: 0;
+				box-shadow: $primaryBoxShadow7;
+				border-radius: 20px;
+				p{
+					font-family: $font-family-sans-serif;
+					font-size: $h2-font-size;
+					margin-bottom: 10px;
+					color: $black5;
+					font-weight: bold;
+					line-height: $headings-line-height;
+					img{
+						margin-bottom: 8px;
+					}
+					span{
+						color: $primaryGreen;
+					}
+					&:last-child{
+						font-size: 16px;
+					}
+				}
+			}
+			.frm_form_fields {
+				padding:32px 70px;
+				position: relative;
+				@media screen and (max-width: $mobile-screen) {
+					padding: 32px 25px;
+				}
+				h3{
+					font-family: $font-family-sans-serif;
+					font-size: $h2-font-size;
+					margin:0;
+					margin-bottom: 24px;
+					color: $black5;
+					font-weight: bold;
+					line-height: $headings-line-height;
+				}
+				.frm_form_field {
+					position: relative;
+					label{
+						display: none;
+						position: absolute;
+						left: 0;
+						top: 11px;
+						left: 25px;
+						pointer-events: none;
+						span{
+							color: $red2;
+						}
+					}
+					input[type="text"]{
+						~.frm_error{
+							display: none;
+						}
+					}
+					input {
+						background: $white;
+						box-shadow: $primaryBoxShadow8;
+						border-radius: 10px;
+						width: 100% !important;
+						border:0;
+						padding: 0px 24px;
+						height: 44px;
+						color: $body-color;
+						font-weight: bold;
+						font-size: 16px;
+						font-family: $font-family-sans-serif;
+						&::-webkit-input-placeholder {
+							font-family: $font-family-sans-serif;
+							font-weight: bold;
+							font-size: 16px;
+							color: $grey2;
+						}
+						  
+						&:-ms-input-placeholder {
+							font-family: $font-family-sans-serif;
+							font-weight: bold;
+							font-size: 16px;
+							color: $grey2;
+						}
+						  
+						&::placeholder {
+							font-family: $font-family-sans-serif;
+							font-weight: bold;
+							font-size: 16px;
+							color: $grey2;
+						}
+					}
+					.frm_invalid{
+						display: none;
+					}
+					.frm_error{
+						color:  $red2;
+						font-size: 14px;
+    					margin-top: 3px;
+						font-weight: bold;
+					}
+					
+					&.frm_blank_field{
+						label{
+							display: block;
+						}
+						input{
+							border: 1px solid $red2;
+							&::-webkit-input-placeholder {
+								color: $white;
+							}
+							  
+							&:-ms-input-placeholder {
+								color:  $white;
+							}
+							  
+							&::placeholder {
+								color: $white;
+							}
+						}
+						iframe{
+							border-color: $red2;
+						}
+					}
+					&.remove-require{
+						label{
+							display: none;
+						}
+					}
+					&.second-require-remove{
+						.frm_error{
+							display:none;
+						}
+					}
+					&.frm_none_container{
+						margin-bottom: 0;
+						grid-column: span 8/span 8;
+					}
+				}
+				.frm_submit{
+					grid-column: span 4/span 4;
+					text-align: right;
+					@media screen and (max-width: $mobile-screen) {
+						text-align: left;
+						margin-top: 24px;
+					}
+					button{
+						margin:0;
+						background: $blue3;
+						box-shadow: $primaryBoxShadow2;
+						border-radius: 10px;
+						border:0;
+						font-family: $font-family-sans-serif;
+						width: 141px;
+						font-weight: bold;
+						font-size: 16px;
+						color: $white !important;
+						transition: all ease-in-out 0.2s;
+						&:hover{
+							opacity: 0.8;
+						}
+					}
+				}
+			}
+		}
+	}
+}

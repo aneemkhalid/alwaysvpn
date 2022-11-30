@@ -1,0 +1,93 @@
+// Commercial Cta
+
+.visual-creative-cta {
+	&.generic{
+		padding:50px 0 50px 60px;
+		max-width:800px;
+		margin-bottom:40px;
+		@media screen and (max-width: $small-tablet-screen) {
+			padding:50px 0 50px 40px;
+		}
+		@media screen and (max-width: $mobile-screen) {
+			padding: 25px 30px 315px;
+		}
+		@media screen and (max-width: $small-mobile-screen) {
+			padding: 25px 30px 195px;
+		}
+	}
+	.black_text{
+		p{
+			color: $black !important;
+		}
+	}
+	.cta_logo{
+		img{
+			height: 42px;
+			max-height: 42px;
+			width: 100%;
+			max-width: 185px;
+			object-fit: contain;
+		}
+	}
+	&.light_blue_red_shield {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-light-blue-red-shield.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-light-blue-red-shield.png);
+		}
+	}
+	&.dark_blue_media_screen {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-dark-blue-media-screen.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-dark-blue-media-screen.png);
+		}
+	}
+	&.light_blue_vpn_files {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-light-blue-vpn-files.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-light-blue-vpn-files.png);
+		}
+	}
+	&.dark_blue_mobile_vpn {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-dark-blue-mobile-vpn.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-dark-blue-mobile-vpn.png);
+		}
+	}
+	&.light_blue_desktop_and_mobile {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-light-blue-desktop-and-mobile.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-light-blue-desktop-and-mobile.png);
+		}
+	}
+	&.black_laptop_vpn {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-black-laptop-vpn.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-black-laptop-vpn.png);
+		}
+	}
+	&.dark_blue_globe_vpn {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-dark-blue-globe-vpn.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-dark-blue-globe-vpn.png);
+		}
+	}
+	&.black_headphoned_user {
+		background-image: url(images/visual-commercial-cta-bg/desktop/desktop-black-headphoned-user.png);
+		@media screen and (max-width: $mobile-screen) {
+			background-image: url(images/visual-commercial-cta-bg/mobile/mobile-black-headphoned-user.png);
+		}
+	}
+	// comparison tool cta backgrounds
+		&.comparison_tool_light_bg{
+			background-image: url(images/comparison-tool-bg/comparison-tool-cta-desktop-light-bg.png);
+			@media screen and (max-width: $mobile-screen) {
+				background-image: url(images/comparison-tool-bg/comparison-tool-cta-mobile-light-bg.png);
+			}
+		}
+		&.comparison_tool_dark_bg{
+			background-image: url(images/comparison-tool-bg/comparison-tool-cta-desktop-dark-bg.png);
+			@media screen and (max-width: $mobile-screen) {
+				background-image: url(images/comparison-tool-bg/comparison-tool-cta-mobile-dark-bg.png);
+			}
+		}
+}

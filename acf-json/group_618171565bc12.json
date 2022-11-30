@@ -1,0 +1,198 @@
+{
+    "key": "group_618171565bc12",
+    "title": "Deals Child",
+    "fields": [
+        {
+            "key": "field_6181717adecf7",
+            "label": "VPN Provider",
+            "name": "vpn_provider",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1,
+            "choices": {
+                "50767": "AirVPN Review",
+                "50793": "Astrill VPN Review",
+                "50422": "Atlas VPN Review",
+                "50462": "Avast Secureline VPN Review",
+                "49667": "AVG Secure VPN Review",
+                "49663": "Betternet VPN Review",
+                "50790": "BTGuard VPN Review",
+                "50805": "Celo VPN Review",
+                "49633": "CyberGhost VPN Review",
+                "49664": "ExpressVPN Review",
+                "50904": "hide.me VPN Review",
+                "50407": "HMA VPN Review",
+                "50617": "Hola VPN Review",
+                "49665": "Hotspot Shield VPN Review",
+                "49545": "IPVanish VPN Review",
+                "50799": "Ivacy VPN Review",
+                "50797": "IVPN Review",
+                "50397": "Mullvad VPN Review",
+                "49596": "NordVPN Review",
+                "49653": "Norton Secure VPN Review",
+                "49666": "Private Internet Access VPN Review",
+                "50421": "ProtonVPN Review",
+                "50465": "PureVPN Review",
+                "50791": "Speedify VPN Review",
+                "53078": "StrongVPN Review",
+                "49650": "Surfshark VPN Review",
+                "50470": "TorGuard VPN Review",
+                "50903": "TunnelBear VPN Review",
+                "49654": "Turbo VPN Review",
+                "50792": "VirtualShield VPN Review",
+                "50419": "VyprVPN Review",
+                "50423": "Whoer VPN Review",
+                "50905": "Windscribe VPN Review",
+                "50469": "ZenMate VPN Review"
+            }
+        },
+        {
+            "key": "field_618171571a71c",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_618171571a75d",
+            "label": "Intro",
+            "name": "intro",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_618171571a699",
+            "label": "FAQs Heading",
+            "name": "faqs_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_618171571a6db",
+            "label": "FAQs",
+            "name": "faqs",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_61816cd9b9389",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_618171575c224",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_618171575c26f",
+                    "label": "Answer",
+                    "name": "answer",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-deals-child.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642699020
+}

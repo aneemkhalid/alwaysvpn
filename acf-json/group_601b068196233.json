@@ -1,0 +1,462 @@
+{
+    "key": "group_601b068196233",
+    "title": "Editor’s Pick Box",
+    "fields": [
+        {
+            "key": "field_601b06d935511",
+            "label": "Editor's Picks Title",
+            "name": "editors_picks_title",
+            "type": "text",
+            "instructions": "Enter title for the editor's picks section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter title",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601b06f035512",
+            "label": "Editor's Picks Description",
+            "name": "editors_picks_description",
+            "type": "textarea",
+            "instructions": "Enter description for the editor's picks section",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 3,
+            "new_lines": ""
+        },
+        {
+            "key": "field_601b070035513",
+            "label": "Editor's Picks Group",
+            "name": "editors_picks_group",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_601b071735514",
+                    "label": "Editor's Pick 1",
+                    "name": "editors_pick_1",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_601b073135515",
+                            "label": "Superlative Title",
+                            "name": "superlative_title",
+                            "type": "text",
+                            "instructions": "Enter a category title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead597fe171",
+                            "label": "Short Description",
+                            "name": "short_description",
+                            "type": "text",
+                            "instructions": "Enter Editor pick tile short description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_601b074935516",
+                            "label": "Editor's Choice",
+                            "name": "editors_choice",
+                            "type": "post_object",
+                            "instructions": "Select editor's choice for the corresponding category from list below",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "reviews"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "",
+                            "ui": 1,
+                            "choices": {
+                                "49667": "AVG Secure VPN Review",
+                                "49663": "Betternet VPN Review",
+                                "49633": "CyberGhost VPN Review",
+                                "49664": "ExpressVPN Review",
+                                "49665": "Hotspot Shield VPN Review",
+                                "49545": "IPVanish VPN Review",
+                                "50376": "Mullvad VPN Review",
+                                "49596": "NordVPN Review",
+                                "49653": "Norton Secure VPN Review",
+                                "49666": "Private Internet Access VPN Review",
+                                "49650": "Surfshark VPN Review",
+                                "49654": "Turbo VPN Review"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_61ead6b9fe172",
+                    "label": "Editor's Pick 2",
+                    "name": "editors_pick_2",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61ead6b9fe173",
+                            "label": "Superlative Title",
+                            "name": "superlative_title",
+                            "type": "text",
+                            "instructions": "Enter a category title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead6b9fe174",
+                            "label": "Short Description",
+                            "name": "short_description",
+                            "type": "text",
+                            "instructions": "Enter Editor pick tile short description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead6b9fe175",
+                            "label": "Editor's Choice",
+                            "name": "editors_choice",
+                            "type": "post_object",
+                            "instructions": "Select editor's choice for the corresponding category from list below",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "reviews"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "",
+                            "ui": 1,
+                            "choices": {
+                                "49667": "AVG Secure VPN Review",
+                                "49663": "Betternet VPN Review",
+                                "49633": "CyberGhost VPN Review",
+                                "49664": "ExpressVPN Review",
+                                "49665": "Hotspot Shield VPN Review",
+                                "49545": "IPVanish VPN Review",
+                                "50376": "Mullvad VPN Review",
+                                "49596": "NordVPN Review",
+                                "49653": "Norton Secure VPN Review",
+                                "49666": "Private Internet Access VPN Review",
+                                "49650": "Surfshark VPN Review",
+                                "49654": "Turbo VPN Review"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_61ead6bbfe176",
+                    "label": "Editor's Pick 3",
+                    "name": "editors_pick_3",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61ead6bbfe177",
+                            "label": "Superlative Title",
+                            "name": "superlative_title",
+                            "type": "text",
+                            "instructions": "Enter a category title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead6bbfe178",
+                            "label": "Short Description",
+                            "name": "short_description",
+                            "type": "text",
+                            "instructions": "Enter Editor pick tile short description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead6bbfe179",
+                            "label": "Editor's Choice",
+                            "name": "editors_choice",
+                            "type": "post_object",
+                            "instructions": "Select editor's choice for the corresponding category from list below",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "reviews"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "",
+                            "ui": 1,
+                            "choices": {
+                                "49667": "AVG Secure VPN Review",
+                                "49663": "Betternet VPN Review",
+                                "49633": "CyberGhost VPN Review",
+                                "49664": "ExpressVPN Review",
+                                "49665": "Hotspot Shield VPN Review",
+                                "49545": "IPVanish VPN Review",
+                                "50376": "Mullvad VPN Review",
+                                "49596": "NordVPN Review",
+                                "49653": "Norton Secure VPN Review",
+                                "49666": "Private Internet Access VPN Review",
+                                "49650": "Surfshark VPN Review",
+                                "49654": "Turbo VPN Review"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "field_61ead6bdfe17a",
+                    "label": "Editor's Pick 4",
+                    "name": "editors_pick_4",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61ead6bdfe17b",
+                            "label": "Superlative Title",
+                            "name": "superlative_title",
+                            "type": "text",
+                            "instructions": "Enter a category title",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "Enter title",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead6bdfe17c",
+                            "label": "Short Description",
+                            "name": "short_description",
+                            "type": "text",
+                            "instructions": "Enter Editor pick tile short description",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_61ead6bdfe17d",
+                            "label": "Editor's Choice",
+                            "name": "editors_choice",
+                            "type": "post_object",
+                            "instructions": "Select editor's choice for the corresponding category from list below",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "reviews"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1,
+                            "choices": {
+                                "49667": "AVG Secure VPN Review",
+                                "49663": "Betternet VPN Review",
+                                "49633": "CyberGhost VPN Review",
+                                "49664": "ExpressVPN Review",
+                                "49665": "Hotspot Shield VPN Review",
+                                "49545": "IPVanish VPN Review",
+                                "50376": "Mullvad VPN Review",
+                                "49596": "NordVPN Review",
+                                "49653": "Norton Secure VPN Review",
+                                "49666": "Private Internet Access VPN Review",
+                                "49650": "Surfshark VPN Review",
+                                "49654": "Turbo VPN Review"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_601c3810da626",
+            "label": "Editor's Picks Anchor Link",
+            "name": "editors_picks_anchor_link",
+            "type": "text",
+            "instructions": "Enter a hyphen-separated anchor link for this section (e.g. best-vpns-by-category)",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Enter anchor link",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/editors-pick"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642780455
+}

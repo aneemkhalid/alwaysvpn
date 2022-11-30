@@ -1,0 +1,143 @@
+// Creative Cta
+.visual-creative-cta {
+	width: 100%;
+	padding: 36px 24px 34px;
+	border-radius: 24px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	.cta_logo {
+		margin-bottom: 24px;
+		display: inline-block;
+		img {
+			height: 42px;
+			width: 100%;
+			max-width: 185px;
+			object-fit: contain;
+		}
+	}
+	p {
+		font-size: 23px !important;
+		font-weight: bold;
+		line-height: normal !important;
+		margin-bottom: 38px;
+		color: #fff !important;
+		max-width: 380px;
+	}
+	.visual-creative-cta-link {
+		padding: 11px 25px 12px;
+		color: #fff !important;
+		font-size: 14px;
+		font-weight: 600;
+		border-radius: 5px;
+		background-image: linear-gradient(to bottom,#fd3824,#e40201);
+		display: inline-block;
+	
+		min-width: 157px;
+		text-align: center;
+		&:hover {
+			opacity: .9;
+		}
+	}
+}
+.visual-creative-cta.money_back {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-money-back-creative-cta.png);
+}
+.visual-creative-cta.android {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-android-creative-cta.png);
+}
+.visual-creative-cta.torreting {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-torrenting-creative-cta.png);
+}
+.visual-creative-cta.streaming {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-streaming-creative-cta.png);
+}
+.visual-creative-cta.gaming {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-gaming-creative-cta.png);
+}
+.visual-creative-cta.netflix {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-netflix-creative-cta.png);
+}
+.visual-creative-cta.firefox {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-firefox-creative-cta.png);
+}
+.visual-creative-cta.apple {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-apple-creative-cta.png);
+	p {
+		color: #040404 !important;
+	}
+}
+.visual-creative-cta.sec_prv {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-security-privacy-creative-cta.png);
+}
+.visual-creative-cta.cryptocurrency {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-cryptocurrency-creative-cta.png);
+}
+.visual-creative-cta.affordable {
+	background-image: url(images/visual-creative-cta-bg/desktop/desktop-affordable-creative-cta.png);
+}
+
+
+@media only screen and (max-width: 767px) {
+	.visual-creative-cta {
+		padding: 36px 24px 285px;
+		background-position: center 100%;
+		p {
+			max-width: 350px;
+			margin: 0 auto 20px;
+		}
+		.visual-cta-link-wrap {
+			text-align: center;
+		}
+	}
+	.visual-creative-cta.money_back {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-money-back-creative-cta.png);
+	}
+	.visual-creative-cta.android {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-android-creative-cta.png);
+	}
+	.visual-creative-cta.torreting {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-torrenting-creative-cta.png);
+	}
+	.visual-creative-cta.streaming {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-streaming-creative-cta.png);
+	}
+	.visual-creative-cta.gaming {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-gaming-creative-cta.png);
+	}
+	.visual-creative-cta.netflix {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-netflix-creative-cta.png);
+	}
+	.visual-creative-cta.firefox {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-firefox-creative-cta.png);
+	}
+	.visual-creative-cta.apple {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-apple-creative-cta.png);
+	}
+	.visual-creative-cta.sec_prv {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-security-privacy-creative-cta.png);
+	}
+	.visual-creative-cta.cryptocurrency {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-cryptocurrency-creative-cta.png);
+	}
+	.visual-creative-cta.affordable {
+		background-image: url(images/visual-creative-cta-bg/mobile/mobile-affordable-creative-cta.png);
+	}
+}
+
+@media (max-width: 575px) {
+	.visual-creative-cta {
+		padding: 36px 24px 265px;
+		p {
+			max-width: 300px;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.visual-creative-cta {
+		padding: 36px 24px 215px;
+		p {
+			max-width: 242px;
+		}
+	}
+}

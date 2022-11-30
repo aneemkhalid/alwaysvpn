@@ -1,0 +1,41 @@
+{
+    "key": "group_62e444d4acc5a",
+    "title": "Get In Touch Block",
+    "fields": [
+        {
+            "key": "field_62e444dfbbe07",
+            "label": "Get In Touch",
+            "name": "get_in_touch",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": []
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/get-in-touch"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1659127051
+}

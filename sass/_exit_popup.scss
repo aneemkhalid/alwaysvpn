@@ -1,0 +1,63 @@
+// Exit Popup
+.close {  
+	color: #000;
+	filter: alpha(opacity=20);
+	float: right;
+	font-size: 21px;
+	font-weight: 600;
+	line-height: 1;
+	opacity: .2;
+	text-shadow: 0 1px 0 #fff;
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none
+}
+
+#exit-popup {
+	h2, p, a {
+		color: #fff;
+	}
+	.modal-header {
+		background-color: $black3; 
+		p {
+			font-family: $headings-font-family;
+
+			span {
+				color: $red;
+			}
+		}
+
+		button.close {
+			opacity:1;
+              margin: -.5rem -1rem -1rem auto;
+		}
+	}	
+	.modal-content {
+		background-color: $navyBlue; 
+
+		h2 {
+			font-size: $h2-font-size !important;
+			line-height:34px;
+		}
+	}
+
+	.modal-dialog {
+		max-width: 90%;
+        pointer-events: auto;
+	}
+
+	@media (min-width: $mobile-screen){
+		.modal-dialog {
+		    width: 500px;
+		}
+	}
+	@media (max-width: $mobile-screen){
+		.caution-icon {
+		    display:none;
+		}
+	}
+}

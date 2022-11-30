@@ -1,0 +1,151 @@
+{
+    "key": "group_624c6802d89d5",
+    "title": "Highlight Table Block",
+    "fields": [
+        {
+            "key": "field_624c6811db99a",
+            "label": "Title",
+            "name": "title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_624c681edb99b",
+            "label": "Providers",
+            "name": "providers",
+            "type": "post_object",
+            "instructions": "Select 2 providers to compare against. If page template is not \"Custom Landing\" add 3 providers.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_624c68a74521e",
+            "label": "Table Fields",
+            "name": "table_fields",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_624cf036b3d61",
+                    "label": "Field",
+                    "name": "field",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "webrtc_leak_protection": "WebRTC Leak Protection",
+                        "dns_leak_protection": "DNS Leak Protection",
+                        "ip_leak_protection": "IP Leak Protection",
+                        "password_manager": "Password Manager",
+                        "ad_blocker": "Ad Blocker",
+                        "protocols": "Protocols",
+                        "browser_extension": "Browser Extension",
+                        "kill_switch": "Kill Switch",
+                        "router_support": "Router Support",
+                        "logging": "Logging Policy",
+                        "lowest_price": "Lowest Price",
+                        "free_trial": "Free Trial",
+                        "cryptocurrency_payment_method": "Cryptocurrency Payment Method",
+                        "money_back_guarantee": "Money-Back Guarantee",
+                        "countries": "Number of Countries",
+                        "works_in_china": "Works in China",
+                        "mobile_app_available": "Mobile App Available",
+                        "number_of_ips": "Number of IPs",
+                        "number_of_servers": "Number of Servers",
+                        "number_of_devices": "Number of Devices \/ Licenses",
+                        "avgdl_speed": "Avg. Download Speed",
+                        "speed_loss": "% Speed Loss",
+                        "unlimited_data": "Unlimited Data",
+                        "jurisdiction": "Jurisidiction",
+                        "customer_support": "Customer Support",
+                        "torrenting_allowed": "Torrenting Allowed?",
+                        "unblocks_netflix": "Unblocks Netflix?"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "array",
+                    "placeholder": ""
+                }
+            ]
+        },
+        {
+            "key": "field_624f469095484",
+            "label": "Highlight Color Override",
+            "name": "highlight_color_override",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/highlight-table"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1649861679
+}

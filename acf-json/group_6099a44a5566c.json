@@ -1,0 +1,57 @@
+{
+    "key": "group_6099a44a5566c",
+    "title": "Inline Coupon",
+    "fields": [
+        {
+            "key": "field_6099a4566b902",
+            "label": "Coupon Promo Choice",
+            "name": "coupon_promo_choice",
+            "type": "select",
+            "instructions": "Choose coupon promo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "54682": "Atlas VPN 3-Year 3-Mos Final Sale 2022",
+                "54679": "ExpressVPN 1-Year New Year 2022",
+                "54133": "Hola VPN Standard Pricing 2022",
+                "54684": "IPVanish 1-Year New Year 2022",
+                "54687": "NordVPN 2-Year New Year 2022",
+                "54683": "Norton Secure VPN 5-Devices New Year 2022",
+                "54681": "PIA 3-Year 3-Month New Year 2022",
+                "54672": "PureVPN New Year 2022",
+                "54688": "StrongVPN 1-Year New Year 2022",
+                "54680": "Surfshark 2-Year New Year 2022"
+            },
+            "default_value": false,
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/inline-coupon-promotion"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642699204
+}

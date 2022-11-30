@@ -1,0 +1,38 @@
+// styled number
+
+.styled_number_element {
+	display: flex;
+	align-items: flex-start;
+	>span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #e5f4ff;
+		width: 36px;
+		height: 36px;
+		margin-right: 16px;
+		font-size: 24px;
+		font-weight: bold;
+		color: #006ade;
+		border-radius: 50%;
+		margin-top: 2px;
+	}
+	h2 {
+		font-size: 36px !important;
+		margin: 0 !important;
+		font-weight: bold;
+		width: calc(100% - 52px);
+		padding-top: 0;
+		margin-bottom: 10px !important;
+		line-height: 1.1 !important;
+	}
+	h3 {
+		margin: 0 !important;
+		font-weight: bold;
+		width: calc(100% - 52px);
+		padding-top: 0;
+		margin-bottom: 10px !important;
+		line-height: 1.1 !important;
+		margin-top: 8px !important;
+	}
+}

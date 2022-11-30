@@ -1,0 +1,708 @@
+{
+    "key": "group_601ad0886cf20",
+    "title": "Best VPN Page Detail",
+    "fields": [
+        {
+            "key": "field_601ad089f2054",
+            "label": "Basic Detail",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61f4674c9fa82",
+            "label": "Author Type",
+            "name": "author_type",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Author": "Author",
+                "Editor": "Editor"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_601ad089f1bf8",
+            "label": "Author",
+            "name": "author",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "40",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "authors"
+            ],
+            "taxonomy": "",
+            "allow_null": 1,
+            "multiple": 0,
+            "return_format": "id",
+            "ui": 1
+        },
+        {
+            "key": "field_60231312904a4",
+            "label": "Mobile Commercial Page?",
+            "name": "mobile_commercial_page",
+            "type": "true_false",
+            "instructions": "Is this commercial page for a mobile platform?",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_62a79d77d8102",
+            "label": "Page Topic",
+            "name": "page_topic",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62a79d80d8103",
+            "label": "Tooltip Override",
+            "name": "tooltip_override",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 0,
+            "delay": 0
+        },
+        {
+            "key": "field_601ad0e46da54",
+            "label": "VPNs List",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60d36597ab05c",
+            "label": "Table Heading",
+            "name": "table_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62a79dead8105",
+            "label": "Table Datapoints",
+            "name": "datapoints",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 2,
+            "max": 2,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_62a7ad81e3698",
+                    "label": "Datapoint",
+                    "name": "datapoint",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "webrtc_leak_protection": "Webrtc Leak Protection",
+                        "dns_leak_protection": "DNS Leak Protection",
+                        "ip_leak_protection": "IP Leak Protection",
+                        "password_manager": "Password Manager",
+                        "ad_blocker": "Ad Blocker",
+                        "protocols": "Protocols",
+                        "browser_extension": "Browser Extension",
+                        "kill_switch": "Kill Switch",
+                        "router_support": "Router Support",
+                        "logging": "Logging Policy",
+                        "lowest_price": "Lowest Price",
+                        "free_trial": "Free Trial",
+                        "cryptocurrency_payment_method": "Cryptocurrency Payment Method",
+                        "money_back_guarantee": "Money Back Guarantee",
+                        "countries": "Number of Countries",
+                        "works_in_china": "Works in China",
+                        "mobile_app_available": "Mobile App Available",
+                        "number_of_ips": "Number of IPs",
+                        "number_of_servers": "Number of Servers",
+                        "number_of_devices": "Number of Devices \/ Licenses",
+                        "avgdl_speed": "Avg. Download Speed",
+                        "speed_loss": "% Speed Loss",
+                        "unlimited_data": "Unlimited Data",
+                        "jurisdiction": "Jurisdiction",
+                        "customer_support": "Customer Support",
+                        "torrentting_allowed": "Torrentting Allowed?",
+                        "unblocks_netflix": "Unblocks Netflix?"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_62a7ad9ce3699",
+                    "label": "Title",
+                    "name": "title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        },
+        {
+            "key": "field_601ad0f16da55",
+            "label": "Select VPNs",
+            "name": "select_vpns",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_601ad1390c7af",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add New",
+            "sub_fields": [
+                {
+                    "key": "field_601ad1390c7af",
+                    "label": "VPN",
+                    "name": "vpn",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "reviews"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_626ad309e4ce8",
+                    "label": "Top of the List Description",
+                    "name": "top_of_the_list_description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_601ad178bbead",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_626ada6ab3282",
+                    "label": "Top of the List Table Description",
+                    "name": "top_of_the_list_table_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_609bed48bb870",
+                    "label": "Table Description",
+                    "name": "table_description",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": "",
+                    "rows": 3,
+                    "new_lines": ""
+                },
+                {
+                    "key": "field_62a79d91d8104",
+                    "label": "Rating",
+                    "name": "rating",
+                    "type": "number",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": "",
+                    "max": "",
+                    "step": ""
+                },
+                {
+                    "key": "field_62a7a7b098314",
+                    "label": "Datapoints Override",
+                    "name": "datapoints_override",
+                    "type": "select",
+                    "instructions": "Pick four. Any additional is ignored.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "webrtc_leak_protection": "Webrtc Leak Protection",
+                        "dns_leak_protection": "DNS Leak Protection",
+                        "ip_leak_protection": "IP Leak Protection",
+                        "password_manager": "Password Manager",
+                        "ad_blocker": "Ad Blocker",
+                        "protocols": "Protocols",
+                        "browser_extension": "Browser Extension",
+                        "kill_switch": "Kill Switch",
+                        "router_support": "Router Support",
+                        "logging": "Logging Policy",
+                        "lowest_price": "Lowest Price",
+                        "free_trial": "Free Trial",
+                        "cryptocurrency_payment_method": "Cryptocurrency Payment Method",
+                        "money_back_guarantee": "Money Back Guarantee",
+                        "countries": "Number of Countries",
+                        "works_in_china": "Works in China",
+                        "mobile_app_available": "Mobile App Available",
+                        "number_of_ips": "Number of IPs",
+                        "number_of_servers": "Number of Servers",
+                        "number_of_devices": "Number of Devices \/ Licenses",
+                        "avgdl_speed": "Avg. Download Speed",
+                        "speed_loss": "% Speed Loss",
+                        "unlimited_data": "Unlimited Data",
+                        "jurisdiction": "Jurisdiction",
+                        "customer_support": "Customer Support",
+                        "torrentting_allowed": "Torrentting Allowed?",
+                        "unblocks_netflix": "Unblocks Netflix?"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 1,
+                    "ui": 1,
+                    "ajax": 0,
+                    "return_format": "array",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_609d52a1fd615",
+                    "label": "Coupon Promo Choice",
+                    "name": "coupon_promo_choice",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "55814": "NordVPN 2-Year Deal"
+                    },
+                    "default_value": false,
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_62a8c629047c3",
+                    "label": "Pros Override",
+                    "name": "pros_override",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "wysiwyg-resize",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_62a8c637047c4",
+                            "label": "Pros",
+                            "name": "pros",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "wysiwyg-resize",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_62a8c653047c5",
+                    "label": "Cons Override",
+                    "name": "cons_override",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "wysiwyg-resize",
+                        "id": ""
+                    },
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "block",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_62a8c65c047c6",
+                            "label": "Cons",
+                            "name": "cons",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "wysiwyg-resize",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_601ad1f9ad9f0",
+            "label": "FAQs",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_60d365a5ab05d",
+            "label": "FAQs Heading",
+            "name": "faqs_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_601ad206ad9f1",
+            "label": "FAQs",
+            "name": "faqs",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_601ad21aad9f2",
+            "min": 0,
+            "max": 0,
+            "layout": "row",
+            "button_label": "Add New",
+            "sub_fields": [
+                {
+                    "key": "field_601ad21aad9f2",
+                    "label": "Question",
+                    "name": "question",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_601ad226ad9f3",
+                    "label": "Answer",
+                    "name": "answer",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_617985a314dee",
+            "label": "DataLayer Info",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_617985bd14def",
+            "label": "Category of Page",
+            "name": "category_of_page",
+            "type": "radio",
+            "instructions": "Select which category this list would fall under.  This will be used in the dataLayer info.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Popular": "Popular",
+                "Device": "Device",
+                "Service": "Service",
+                "Location": "Location"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "best-vpn"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-best-vpn-new.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1655417674
+}

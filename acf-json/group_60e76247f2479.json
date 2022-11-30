@@ -1,0 +1,455 @@
+{
+    "key": "group_60e76247f2479",
+    "title": "Resource Page Template Fields",
+    "fields": [
+        {
+            "key": "field_60e7625c0ae25",
+            "label": "TOC Toggle",
+            "name": "toc_toggle",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_60ef477d3625d",
+            "label": "TOC Heading",
+            "name": "toc_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60e7625c0ae25",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6230aac272e2b",
+            "label": "Side Navigation",
+            "name": "side_nav",
+            "type": "group",
+            "instructions": "Clear field data when changing types.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_6230aae172e2c",
+                    "label": "Type",
+                    "name": "type",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "None": "None",
+                        "Deal": "Deal",
+                        "Tracking": "Tracking",
+                        "Review": "Review",
+                        "Tool": "Tool",
+                        "Commercial Page": "Commercial Page"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6230ab831106b",
+                    "label": "VPN Provider",
+                    "name": "vpn_provider",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tracking"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Review"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Deal"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "reviews"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1,
+                    "choices": {
+                        "50767": "AirVPN Review",
+                        "50793": "Astrill VPN Review",
+                        "50422": "Atlas VPN Review",
+                        "50462": "Avast Secureline VPN Review",
+                        "49667": "AVG Secure VPN Review",
+                        "49663": "Betternet VPN Review",
+                        "50790": "BTGuard VPN Review",
+                        "50805": "Celo VPN Review",
+                        "49633": "CyberGhost VPN Review",
+                        "49664": "ExpressVPN Review",
+                        "50904": "hide.me VPN Review",
+                        "50407": "HMA VPN Review",
+                        "50617": "Hola VPN Review",
+                        "49665": "Hotspot Shield VPN Review",
+                        "49545": "IPVanish VPN Review",
+                        "50799": "Ivacy VPN Review",
+                        "50797": "IVPN Review",
+                        "50397": "Mullvad VPN Review",
+                        "49596": "NordVPN Review",
+                        "49653": "Norton Secure VPN Review",
+                        "49666": "Private Internet Access VPN Review",
+                        "50421": "ProtonVPN Review",
+                        "50465": "PureVPN Review",
+                        "50791": "Speedify VPN Review",
+                        "53078": "StrongVPN Review",
+                        "49650": "Surfshark VPN Review",
+                        "50470": "TorGuard VPN Review",
+                        "50903": "TunnelBear VPN Review",
+                        "49654": "Turbo VPN Review",
+                        "50792": "VirtualShield VPN Review",
+                        "50419": "VyprVPN Review",
+                        "50423": "Whoer VPN Review",
+                        "50905": "Windscribe VPN Review",
+                        "50469": "ZenMate VPN Review"
+                    }
+                },
+                {
+                    "key": "field_623375c82022d",
+                    "label": "Commercial Page",
+                    "name": "commercial_page",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Commercial Page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "best-vpn"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_6230ad5f1106e",
+                    "label": "Header",
+                    "name": "header",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tracking"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Review"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tool"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Commercial Page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6230ad741106f",
+                    "label": "Description",
+                    "name": "description",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tracking"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Review"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tool"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Commercial Page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_623359f39ea85",
+                    "label": "Select Target Link",
+                    "name": "select_target_link",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tracking"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": [],
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_6230affb11070",
+                    "label": "CTA Text",
+                    "name": "cta_text",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tracking"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tool"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Commercial Page"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_6230b09d11073",
+                    "label": "CTA Link",
+                    "name": "cta_link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tool"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_6230b0da11074",
+                    "label": "Image",
+                    "name": "image",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_6230aae172e2c",
+                                "operator": "==",
+                                "value": "Tool"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-resource.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "single-resource.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1647543805
+}

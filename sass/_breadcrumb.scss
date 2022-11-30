@@ -1,0 +1,180 @@
+// breadcrumbs
+
+.breadcrumbs-container-row {
+	width: 100%;
+}
+.breadcrumbs-container-row.cpt-breadcrumbs-container {
+	//background: #fafafa;
+}
+.breadcrumbs-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 93px 0 30px;
+	margin: 0 auto;
+	a.disclosure-link {
+		font-size: 12px;
+		color: #008eff;
+		text-decoration: underline;
+		font-weight: 400;
+	}
+}
+.breadcrumbs-container.search-breadcrumbs-padding {
+	padding: 20px 0 30px;
+}
+
+div.breadcrumbs-container {
+	.breadcrumb {
+		margin-top: 0;
+        color: #ccc;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 6px;
+        padding: 0;
+        text-transform: capitalize;
+		li {
+            display: inline-block;
+			&:first-child {
+				a {
+					font-size: 0px;
+					&::before {
+						content: "AlwaysVPN";
+						font-size: 12px;
+						font-weight: 400;
+					}
+					&::after {
+						content: "/";
+						font-size: 12px;
+						font-weight: 400;
+					}
+				}
+				margin-right: 5px;
+			}
+            a {		
+
+				&::after {
+					content: "/";
+					font-size: 12px;
+					font-weight: 400;
+					color: #ccc;
+					margin-left: 5px;
+				}
+			}
+            &.no-link{
+				color: #686868;
+				font-size: 12px;
+				font-weight: 400;
+				margin-left: 5px;
+				
+				&::after {
+					content: "/";
+					font-size: 12px;
+					font-weight: 400;
+					color: #ccc;
+					margin-left: 5px;
+				}
+			}
+		}
+		a {
+			color: #686868;
+			font-size: 12px;
+			font-weight: 400;
+			&:hover {
+				color: #008EFF;
+				&::before {
+					opacity: 1;
+				}
+			}
+		}
+		.active {
+			color: #686868;
+			font-size: 12px;
+			font-weight: 400;
+			color: #444;
+			font-weight: 700;
+            margin-left: 3px;
+		}
+	}
+}
+.breadcrumb > li + li::before {
+    content: "";
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+	.breadcrumbs-container {
+		width: 750px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.breadcrumbs-container.search-breadcrumbs-padding {
+		width: 750px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.breadcrumbs-container {
+		width: 970px;
+		padding-left: 15px;
+	}
+	.breadcrumbs-container.search-breadcrumbs-padding {
+		width: 970px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.breadcrumbs-container {
+		width: 1170px;
+		padding-left: 15px;
+	}
+	.breadcrumbs-container.search-breadcrumbs-padding {
+		width: 1170px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.breadcrumbs-container {
+		flex-direction: column;
+		text-align: left;
+		padding: 67px 15px 20px ;
+	}
+	.breadcrumbs-container.search-breadcrumbs-padding {
+		flex-direction: column;
+		text-align: left;
+		padding: 13px 15px 20px;
+	}
+	div.breadcrumbs-container {
+		.breadcrumb {
+			font-size: 12px;
+            min-height: 38px;
+		}
+	}
+}
+
+.breadcrumbs-container a.disclosure-link {
+  color: $link-color;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+//old breadcrumb?
+
+/*@media screen and (max-width:1024px) {
+	.bread-crumb_main {
+		padding: 80px 0 30px;
+	}
+}
+@media screen and (max-width:767px) {
+	.bread-crumb_main {
+		padding: 67px 0 25px;
+	}
+}
+@media screen and (max-width:640px) {
+	.bread-crumb_main {
+		.container {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: flex-start;
+		}
+		.bread-crumb {
+			margin-bottom: 7px;
+		}
+	}
+}
+*/

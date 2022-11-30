@@ -1,0 +1,122 @@
+{
+    "key": "group_60f5cbdb21e42",
+    "title": "Filter Tagging for Resources",
+    "fields": [
+        {
+            "key": "field_60f5cbdfbb7d4",
+            "label": "Filter for",
+            "name": "filter_for",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "guides": "Guides",
+                "insights": "Insights"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "",
+            "layout": "horizontal",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_60f5cc4abb7d5",
+            "label": "Insights Filters",
+            "name": "insights_filters",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f5cbdfbb7d4",
+                        "operator": "==",
+                        "value": "insights"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "vpns": "VPNs",
+                "cybersecurity": "Cybersecurity",
+                "identityprotection": "Identity Protection",
+                "passwordmanager": "Password Manager",
+                "digitalinvestmentprotection": "Digital Investment Protection"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 1,
+            "return_format": "array",
+            "save_custom": 0
+        },
+        {
+            "key": "field_60f5ccddbb7d6",
+            "label": "Guides Filters",
+            "name": "guides_filters",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_60f5cbdfbb7d4",
+                        "operator": "==",
+                        "value": "guides"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "guides": "Guides",
+                "howtos": "How-Tos"
+            },
+            "allow_custom": 0,
+            "default_value": [],
+            "layout": "horizontal",
+            "toggle": 1,
+            "return_format": "array",
+            "save_custom": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-resource.php"
+            }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "single-resource.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1642698923
+}

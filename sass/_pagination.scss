@@ -1,0 +1,119 @@
+// Pagination
+
+.modeltheme-pagination-holder.pagination-container {
+	text-align: left;
+	margin-left: -5px;
+}
+.pagination {
+	span.page-numbers.current {
+		background: #008eff !important;
+	}
+	a.page-numbers {
+		&:hover {
+			background: #008eff !important;
+		}
+		&:before {
+			background: #008eff !important;
+		}
+	}
+	span.page-numbers {
+		&:hover {
+			background: #008eff !important;
+		}
+	}
+}
+.pagination-wrapper {
+	text-align: center;
+	nav.pagination {
+		background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+		.page-numbers {
+             display: inline-flex;
+            justify-content: center;
+            align-items: center;
+			&:not(.prev) {
+				&:not(.next) {
+                   
+					border-radius: 50%;
+					width: 32px;
+					height: 32px;
+					text-align: center;
+					padding: 0px;
+					line-height: 32px;
+					margin: 0 6px;
+					background-color: #ececec;
+					font-size: 18px;
+					font-weight: bold;
+					color: #686868;
+					&:hover {
+						background-color: #e5f4ff !important;
+						color: #006ade !important;
+					}
+				}
+			}
+            
+            i {
+                display: block;
+            }
+		}
+		.page-numbers.current {
+			&:not(.prev) {
+				&:not(.next) {
+					background-color: #e5f4ff !important;
+					color: #006ade !important;
+				}
+			}
+		}
+		.page-numbers.prev {
+			color: #2c2c2c;
+			background-color: transparent;
+			padding: 0px;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			margin: 0px;
+			&:hover {
+				background-color: transparent !important;
+				color: #006ade !important;
+			}
+            
+            .chevron {
+                  transform: rotate(180deg);
+            }
+		}
+		.page-numbers.next {
+			color: #2c2c2c;
+			background-color: transparent;
+			padding: 0px;
+			width: 32px;
+			height: 32px;
+			line-height: 32px;
+			margin: 0px;
+			&:hover {
+				background-color: transparent !important;
+				color: #006ade !important;
+			}
+		}
+	}
+
+}
+@media screen and (max-width: 992px) {
+	div.modeltheme-pagination-holder {
+		text-align: left;
+		padding-left: 0;
+	}
+	nav.navigation.pagination {
+		margin-left: -5px;
+	}
+}
+@media screen and (max-width: 640px) {
+	div.modeltheme-pagination-holder {
+		text-align: left;
+		padding-left: 0;
+	}
+	nav.navigation.pagination {
+		margin-left: -5px;
+	}
+}

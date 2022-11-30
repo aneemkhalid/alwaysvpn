@@ -1,0 +1,1 @@
+<?php get_template_part( 'template-parts/coupon-promotion-popup', '', array( 'post_ids' => $vpn_ids ) ); ?>

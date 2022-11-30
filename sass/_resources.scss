@@ -1,0 +1,187 @@
+// resources
+
+.resources-aggregate-page {
+	.aggregate-page-container {
+		margin-bottom: 10px;
+	}
+	.vpn-cards {
+		gap: 3.5%;
+		.comparison-card {
+			margin: 20px 0;
+		}
+	}
+	.filter-wrapper {
+		padding-top: 32px;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			padding-left: 0px;
+			li {
+				list-style: none;
+				border-right: 2px solid #008eff;
+				padding-left: 8px;
+				padding-right: 8px;
+				&:last-of-type {
+					border-right: none;
+				}
+				a {
+					font-size: 15px;
+					color: #686868;
+					&:hover {
+						font-weight: bold;
+						color: #151515;
+					
+					}
+				}
+			}
+			li.active {
+				a {
+					font-weight: bold;
+					color: #151515;
+				
+				}
+			}
+		}
+	}
+
+	.pagination {
+		margin-bottom: 0px;
+	}
+}
+.deals-page {
+	.aggregate-page-container {
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.resources-aggregate-page {
+		.filter-wrapper {
+			ul {
+				li {
+					margin-bottom: 6px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 640px) {
+	.resources-aggregate-page {
+		.filter-wrapper {
+			ul {
+				li {
+					a {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.resource-side-item {
+	margin-top: 32px;
+	box-shadow: $primaryBoxShadow4;
+	background: white;
+	.inside-content {
+		padding: 24px;
+		text-align: center;
+		h4 {
+			margin-bottom: 8px;
+		}
+		.expire {
+			margin-bottom: 12px;
+			color: $grey4;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		.lowest-price {
+			margin-bottom: 12px;
+			color: $black4;
+			font-size: 14px;
+			span {
+				font-weight: bold;
+			}
+		}
+		.description {
+			margin-bottom: 24px;
+		}
+		.legal-cta {
+			margin-top: 16px;
+			display: block;
+			text-decoration: underline;
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+		min-height: 175px;
+		object-fit: cover;
+	}
+}
+
+.sticky-cta {
+	background: linear-gradient(180deg, #FD3824 0%, #E40201 100%);
+	position: sticky;
+	bottom: 0;
+	z-index: 3;
+	// @media screen and (min-width: 768px) {
+	// 	background: white;
+	// 	border-top: 3px solid $red;
+	// }
+	@media screen and (min-width: 1025px) {
+		display: none;
+	}
+	.btn {
+		color: white;
+		max-width: 100%;
+		&:hover {
+			background: $btn-primary-hover-gradient;
+		}
+		// @media screen and (min-width: 768px) {
+		// 	background: linear-gradient(180deg, #FD3824 0%, #E40201 100%);
+		// 	max-width: 220px;
+		// 	width: auto;
+		// 	padding: 10.5px 15px;
+		// }
+	}
+	.inside-content {
+		// @media screen and (min-width: 768px) {
+		// 	padding: 8px 16px;
+		// 	margin: 0 auto;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	justify-content: center;
+		// }
+	}
+	h5 {
+		display: none;
+		// @media screen and (min-width: 768px) {
+		// 	display: block;
+		// 	margin-bottom: 0;
+		// 	margin-right: 16px;
+		// 	text-align: center;
+		// }
+	}
+}
+
+.side-navi {
+	padding-bottom: 0;
+	.middle {
+		padding-bottom: 24px;
+		@media screen and (min-width: 1025px) {
+			padding-bottom: 75px;
+      
+		}
+	}
+    
+    &.side-navi-show {
+        
+        .middle {
+            @media screen and (min-width: 1025px) {
+
+                margin-left: unset;
+                margin-right: auto;
+            }
+        }
+    }
+}

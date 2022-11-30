@@ -1,0 +1,110 @@
+/*!
+Theme Name: AVPN
+Theme URI: https://www.alwaysvpn.com/
+Author: AdAction
+Author URI: https://www.alwaysvpn.com/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: avpn
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+*/
+
+
+@import 'styleguide';
+@import 'variable';
+
+/* only import bootstrap componants that we need */
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/root';
+@import '../node_modules/bootstrap/scss/reboot';
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/code';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/tables';
+///* @import '../node_modules/bootstrap/scss/forms'; */
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/transitions';
+//@import '../node_modules/bootstrap/scss/dropdown';
+///* @import '../node_modules/bootstrap/scss/button-group'; */
+///* @import '../node_modules/bootstrap/scss/input-group'; */
+///* @import '../node_modules/bootstrap/scss/custom-forms'; */
+//@import '../node_modules/bootstrap/scss/nav';
+//@import '../node_modules/bootstrap/scss/navbar';
+//@import '../node_modules/bootstrap/scss/card';
+///* @import '../node_modules/bootstrap/scss/breadcrumb'; */
+///* @import '../node_modules/bootstrap/scss/pagination'; */
+///* @import '../node_modules/bootstrap/scss/badge'; */
+///* @import '../node_modules/bootstrap/scss/jumbotron'; */
+///* @import '../node_modules/bootstrap/scss/alert'; */
+//@import '../node_modules/bootstrap/scss/progress';
+///* @import '../node_modules/bootstrap/scss/media'; */
+///* @import '../node_modules/bootstrap/scss/list-group'; */
+@import '../node_modules/bootstrap/scss/close';
+///* @import '../node_modules/bootstrap/scss/toasts'; */
+@import '../node_modules/bootstrap/scss/modal';
+///* @import '../node_modules/bootstrap/scss/tooltip'; */
+///* @import '../node_modules/bootstrap/scss/popover'; */
+///* @import '../node_modules/bootstrap/scss/carousel'; */
+///* @import '../node_modules/bootstrap/scss/spinners'; */
+@import '../node_modules/bootstrap/scss/utilities';
+///* @import '../node_modules/bootstrap/scss/print'; */
+
+/*@import '../node_modules/slick-carousel/slick/slick.scss';
+*/
+//@import '../node_modules/datatables.net-dt/css/jquery.dataTables.css';
+@import '../node_modules/flickity/dist/flickity.css';
+
+
+@import 'common';
+@import 'header';
+@import 'breadcrumb';
+@import 'buttons';
+@import 'tables';
+@import 'sidebar';
+@import 'cookie_notice';
+@import 'anchor_tiles';
+@import 'homepage';
+@import 'about_us';
+@import 'author_bio_page';
+@import 'bar_tiles';
+@import 'best_vpn';
+@import 'blue_callout';
+@import 'comparison';
+@import 'comparison_card';
+@import 'coupons';
+@import 'creative_cta';
+@import 'featured_content';
+@import 'likes_dislikes';
+@import 'overall_rating';
+@import 'pagination';
+@import 'pro_con';
+@import 'related_article';
+@import 'resources';
+@import 'review';
+@import 'search';
+@import 'styled_number';
+@import 'text_rating';
+@import 'vpn_comparison';
+@import 'footer';
+@import 'elementor';
+@import 'exit_popup';
+@import 'commercial_cta';
+@import 'ip_identification_banner';
+@import 'quote_callout';
+@import 'custom_lander';
+@import 'single-programmatic_posts';
+@import 'toast';
+@import 'commercial_page';
+@import 'custom';
+@import 'get_in_touch';
+
+
+
+

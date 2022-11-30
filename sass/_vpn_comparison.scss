@@ -1,0 +1,1403 @@
+// VPN Comparison Tool
+
+.flickity-enabled {
+	position: relative;
+	&:focus {
+		outline: none;
+	}
+}
+.flickity-viewport {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+.flickity-slider {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.flickity-enabled.is-draggable {
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	.flickity-viewport {
+		cursor: move;
+		cursor: -webkit-grab;
+		cursor: grab;
+	}
+	.flickity-viewport.is-pointer-down {
+		cursor: -webkit-grabbing;
+		cursor: grabbing;
+	}
+}
+.flickity-button {
+	position: absolute;
+	background: hsla(0, 0%, 100%, 0.75);
+	border: none;
+	color: #333;
+	&:hover {
+		background: white;
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 5px #19F;
+	}
+	&:active {
+		opacity: 0.6;
+	}
+	&:disabled {
+		opacity: 0.3;
+		cursor: auto;
+		pointer-events: none;
+	}
+}
+.flickity-button-icon {
+	fill: currentColor;
+}
+.flickity-prev-next-button {
+	top: 50%;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	transform: translateY(-50%);
+	.flickity-button-icon {
+		position: absolute;
+		left: 20%;
+		top: 20%;
+		width: 60%;
+		height: 60%;
+	}
+}
+.flickity-prev-next-button.previous {
+	left: 10px;
+}
+.flickity-prev-next-button.next {
+	right: 10px;
+}
+.flickity-rtl {
+	.flickity-prev-next-button.previous {
+		left: auto;
+		right: 10px;
+	}
+	.flickity-prev-next-button.next {
+		right: auto;
+		left: 10px;
+	}
+	.flickity-page-dots {
+		direction: rtl;
+	}
+}
+.flickity-page-dots {
+	position: absolute;
+	width: 100%;
+	bottom: -25px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	line-height: 1;
+	.dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 8px;
+		background: #333;
+		border-radius: 50%;
+		opacity: 0.25;
+		cursor: pointer;
+	}
+	.dot.is-selected {
+		opacity: 1;
+	}
+}
+.page-template-page-vpn-comparisons {
+	&.best-vpn-comparison{
+		position: -webkit-sticky;
+    	position: sticky;
+		bottom: -181px;
+		transition: all ease-in-out 0.5s;
+		&.slide-toggle{
+			bottom: 0;
+		}
+		.vpn-compare-footer{
+			.vpn-item-container{
+				>div{
+					background-position: 100% 33%;
+				}
+			}
+		}
+	}
+	.back-to-top {
+		display: none;
+	}
+	.breadcrumbs-container {
+		padding-bottom: 2rem;
+	}
+	#primary {
+		position: relative;
+	}
+	.header-separator {
+		margin-top: 0.5rem;
+	}
+	.content-description {
+		text-align: center;
+		p {
+			color: #151515;
+		}
+	}
+	.page-title {
+		font-size: 24px !important;
+		margin-bottom: 0;
+	}
+	.pro-item {
+		display: flex;
+		align-items: start;
+		font-size: 16px;
+		line-height: 24px;
+		img {
+			height: 1.125rem;
+            margin-right: .5rem;
+            margin-top: .2rem;
+            width: 1.125rem;
+		}
+	}
+	.con-item {
+		display: flex;
+		align-items: start;
+		font-size: 16px;
+		line-height: 24px;
+		img {
+			height: 1.125rem;
+            margin-right: .5rem;
+            margin-top: .2rem;
+            width: 1.125rem;
+		}
+	}
+	.pros-container {
+		padding: 15px;
+	}
+	.cons-container {
+		padding: 15px;
+		padding-top: 0;
+	}
+	.compare-container {
+		background: #F6F6F6;
+		padding: 3rem 0;
+	}
+	.comp-item {
+		background: white;
+		.logo {
+			padding: 15px 0;
+			margin: 0 15px;
+			border-bottom: 1px solid $lightGrey3;
+			img {
+				height: 45px;
+				width: auto;
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+		}
+	}
+	.comp-item-container {
+		display: flex;
+		flex-direction: column;
+		>* {
+			+ {
+				* {
+					margin-top: 3rem;
+				}
+			}
+		}
+	}
+	.btn-container {
+		.review-btn {
+			color: #006ADE;
+			display: inline-block;
+			padding: 0 15px 15px 15px;
+			transition: all;
+			transition-duration: 200ms;
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+		.compare-blue-btn {
+			color: white;
+			background: #006ADE;
+			display: flex;
+			width: 100%;
+			align-items: center;
+			padding: 0.75rem 2rem;
+			border: none;
+			font-weight: bold;
+            font-family: $btn-font-family;
+			font-size: 14px;
+			letter-spacing: 1px;
+			line-height: 1;
+			justify-content: center;
+			transition: all;
+			transition-duration: 200ms;
+			img {
+				height: 30px;
+				width: 30px;
+			}
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+		.compare-blue-btn.is-set {
+			background: #222222;
+			img {
+				transform: rotate(45deg);
+			}
+		}
+	}
+	.view-more-collapse {
+		font-size: $table-font-size;
+		color: $secondary;
+		text-align:center;
+		border: 2px solid $lightGrey3;
+		border-top: 1px solid $lightGrey3;
+		background-color: $white;
+		&:hover {
+			cursor: pointer;
+		}
+		&.view-more-open {
+			svg {
+				transform: rotate(180deg);
+				margin-bottom: 3px;
+			}
+		}
+	}
+	.compare-result-container {
+		padding: 2rem 0;
+		.result-logos {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 2rem;
+			>* {
+				+ {
+					* {
+						margin-top: 1.5rem;
+					}
+				}
+			}
+			.vpn-linkout {
+				display: flex;
+				background: white;
+				padding: 2rem 1.5rem;
+				box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+				border-radius: 10px;
+				min-height: 85px;
+				transition: all 0.15s;
+				.logo-container {
+					width: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: start;
+					padding-right: 1.5rem;
+					img {
+						height: 30px;
+						width: auto;
+						-o-object-fit: contain;
+						object-fit: contain;
+					}
+				}
+				.name-container {
+					width: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					text-align: center;
+					color: #006ADE;
+					font-size: 15px;
+				}
+				&:hover {
+					background: #F6F6F6;
+				}
+			}
+			.compare-return-container {
+				text-align: center;
+				.compare-return-btn {
+					text-align: center;
+					color: #006ADE;
+					margin-top: 2rem;
+				}
+			}
+		}
+		.result-logos.repeat {
+			margin-top: 4rem;
+			.compare-return-container {
+				display: none;
+			}
+		}
+		.vpn-table-container {
+			display: flex;
+			flex-direction: column;
+			margin-left: 15px;
+			>* {
+				+ {
+					* {
+						margin-top: 4rem;
+					}
+				}
+			}
+		}
+		.vpn-tables {
+			position: relative;
+		}
+		.compare-table-container {
+			position: relative;
+			.swipe-text {
+				color: #7E7E7E;
+				font-size: 12px;
+				text-align: right;
+				padding-right: 15px;
+			}
+			.table-scroll {
+				overflow-x: auto;
+				overflow-y: hidden;
+			}
+			.vpn-logo-container {
+				img {
+					height: 20px;
+					width: 100%;
+					-o-object-fit: contain;
+					object-fit: contain;
+				}
+			}
+			.table-scroll-container {
+				flex-grow: 1;
+				overflow: hidden;
+				position: relative;
+			}
+			.gradient-right {
+				position: absolute;
+				height: 100%;
+				width: 25px;
+				background: linear-gradient(90deg, rgba(0, 0, 0, 0.16) 0%, rgba(0, 0, 0, 0.000016) 80%);
+				transform: matrix(-1, 0, 0, 1, 0, 0);
+				right: 0;
+				top: 0;
+				bottom: 0;
+				z-index: 20;
+			}
+			.compare-checkmark {
+				height: 2.75rem;
+				width: 2.75rem;
+				color: #44D1A0;
+			}
+			.carousel-cell {
+				border-collapse: separate;
+				width: 100%;
+				height: 100%;
+				box-sizing: border-box;
+				margin-right: 0px;
+				border-bottom:none;
+				border-color: $lightGrey3;
+
+				&.no-view-more {
+					tbody {
+						tr {
+							&:last-child {
+								td {
+									&:first-child {
+										border-bottom-left-radius: 10px;
+									}
+									&:last-child {
+										border-bottom-right-radius: 10px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				th {
+					white-space: normal;
+					min-width: 125px;
+					z-index: 0;
+					border: 1px solid $lightGrey3;
+					color: black;
+					padding: 1rem !important;
+					font-size: 16px;
+					vertical-align: middle;
+					a {
+						color: #006ADE;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				td {
+					white-space: normal;
+					min-width: 125px;
+					z-index: 0;
+					border: 1px solid $lightGrey3;
+					color: black;
+					padding: 1rem !important;
+					font-size: 16px;
+					vertical-align: middle;
+					a {
+						color: #006ADE;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				tbody:last-child {
+					tr {
+						&:nth-child(odd) {
+							background: white;
+							.table-key {
+								background: white;
+							}
+						}
+						&:nth-child(even) {
+							background: #FAFAFA;
+							.table-key {
+								background: #FAFAFA;
+							}
+						}
+					}
+				}
+				tbody:first-child {
+					tr {
+						&:nth-child(odd) {
+							background: #FAFAFA;
+							.table-key {
+								background: #FAFAFA;
+							}
+						}
+						&:nth-child(even) {
+							background: white;
+							.table-key {
+								background: white;
+							}
+						}
+						&:first-child {
+							td {
+								&:first-child {
+									border-top-left-radius: 10px;
+									background: #006ADE;
+									border: none;
+									color: white;
+									font-weight: bold;
+								}
+								&:last-child {
+									border-top-right-radius: 10px;
+								}
+							}
+							background: #D1E1F4;
+						}
+					}
+				}
+				.table-key {
+					width: 150px !important;
+					min-width: 150px !important;
+					max-width: 150px !important;
+					position: -webkit-sticky;
+					position: sticky;
+					z-index: 20 !important;
+					left: 0;
+					box-shadow: 15px 0 10px -1px rgba(0, 0, 0, 0.08);
+					background-clip: border-box;
+					text-align: left;
+				}
+			}
+			.table-head {
+				thead {
+					height: 100px;
+				}
+			}
+		}
+		.results-bar-container {
+			display: none;
+			position: -webkit-sticky;
+			position: sticky;
+			top: -1px;
+			z-index: 50;
+			transition: all 150ms ease-in-out;
+		}
+		.results-bar-container.is-sticky {
+			background: white;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			.results-bar {
+				margin-bottom: 0;
+				box-shadow: none;
+			}
+			.title {
+				h2 {
+					visibility: visible;
+					opacity: 1;
+					transition: all 150ms ease-in-out;
+				}
+			}
+		}
+		.results-bar {
+			background: white;
+			border-radius: 10px;
+			box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+			margin-bottom: 2rem;
+			table {
+				border: none;
+				td {
+					min-width: 150px;
+					border: none;
+					position: relative;
+					img {
+						height: 30px;
+						width: auto;
+						-o-object-fit: contain;
+						object-fit: contain;
+					}
+				}
+				tr {
+					&:first-child {
+						td {
+							&:first-child {
+								width: 100% !important;
+							}
+							&:after {
+								content: "";
+								width: 1px;
+								height: 75%;
+								background-color: $lightGrey3;
+								right: 0;
+								position: absolute;
+								display: block;
+								top: 15px;
+							}
+							&:last-child {
+								background-color: transparent;
+							}
+						}
+					}
+				}
+				.title {
+					text-align: left;
+					h2 {
+				
+						text-align: left;
+						margin-top: 0;
+						visibility: hidden;
+						opacity: 0;
+                        font-size:20px;
+                        line-height: 24px;
+                        margin-bottom: 0;
+					}
+					a {
+						color: #006ADE;
+						text-align: left;
+						display: inline-block;
+						.name-container {
+							line-height: 1;
+						}
+					}
+				}
+				.vpn-linkout {
+					height: 40px;
+					color: #006ADE;
+					position: relative;
+					.name-container {
+						line-height: 1;
+						min-height: 32px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 15px;
+					}
+					.logo-container {
+						margin-bottom: 0px;                     
+						height: 50px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+			}
+		}
+		.cta-bar {
+			display: none;
+			margin-top: 10px;
+			table {
+				border: none;
+				td {
+					min-width: 150px;
+					border: none;
+					position: relative;
+					padding: 10px 8px !important;
+				}
+				tr {
+					&:first-child {
+						td {
+							&:first-child {
+								width: 100% !important;
+								background: none;
+							}
+						}
+					}
+				}
+				.title {
+					text-align: left;
+					h2 {
+			
+						text-align: left;
+						margin-top: 0;
+						visibility: hidden;
+					}
+					a {
+						text-align: left;
+						display: inline-block;
+						.name-container {
+							line-height: 1;
+						}
+					}
+				}
+				.vpn-linkout {
+					background: linear-gradient(180deg, #FD3824 0%, #E40201 100%);
+					color: white;
+					border-radius: 10px;
+					display: inline-block;
+					padding: 1rem;
+					position: relative;
+					transition: all;
+					transition-duration: 150ms;
+					width: 100%;
+					.name-container {
+						line-height: 1;
+						min-height: 32px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 14px;
+						font-weight: bold;
+                        font-family: $btn-font-family;
+					}
+					&:hover {
+						opacity: 0.6;
+					}
+				}
+			}
+		}
+	}
+	.compare-result-container.vpn-count-4 {
+		.compare-table-container {
+			.carousel-cell {
+				td {
+					min-width: 180px;
+					width: 180px;
+				}
+			}
+		}
+		.results-bar {
+			td {
+				min-width: 180px;
+			}
+		}
+		.cta-bar {
+			td {
+				min-width: 180px;
+			}
+		}
+	}
+}
+@media screen and (min-width: 640px) {
+	.page-template-page-vpn-comparisons {
+		.header-separator {
+			margin-top: 1rem;
+		}
+		.content-description {
+			padding-bottom: 1rem;
+		}
+		.page-title {
+			font-size: 32px !important;
+			padding-top: 2rem;
+		}
+		.pro-item {
+			font-size: 15px;
+		}
+		.con-item {
+			font-size: 15px;
+		}
+		.pros-container {
+			width: 50%;
+		}
+		.cons-container {
+			width: 50%;
+			padding-top: 15px;
+		}
+		.pros-cons-container {
+			display: flex;
+		}
+
+	}
+}
+@media screen and (min-width: 1024px) {
+	.page-template-page-vpn-comparisons {
+	
+		.pros-container {
+			padding: 0 15px;
+		}
+		.cons-container {
+			padding: 0 15px;
+			padding-top: 0px;
+		}
+		.pros-cons-container {
+			grid-column: span 7/span 7;
+		}
+		.comp-item {
+			.logo {
+				img {
+					max-width: none;
+					width: 100%;
+				}
+				display: flex;
+				align-items: center;
+				padding: 0;
+				padding-right: 2rem;
+				grid-column: span 3/span 3;
+				margin: 0;
+				border-bottom: none;
+				padding-right: 3rem;
+			}
+			display: grid;
+			grid-template-columns: repeat(12, minmax(0, 1fr));
+			padding: 2rem 1.5rem;
+		}
+		.btn-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			grid-column: span 2/span 2;
+			.review-btn {
+				order: 1;
+				font-size: 14px;
+				padding: 1rem 0 0 0;
+				text-align: center;
+			}
+			.compare-blue-btn {
+				img {
+					height: 30px;
+				    width: 30px;
+				}
+				flex-grow: 0;
+				display: inline-flex;
+				order: 0;
+				font-size: 12px;
+				width: auto;
+				padding: 7.5px 10px;
+				border-radius: 10px;
+			}
+		}
+		.compare-result-container {
+			//background: #F6F6F6;
+			.result-logos.mobile {
+				display: none;
+			}
+			.vpn-table-container {
+				width: 970px;
+				padding: 0 15px;
+				margin: 0 auto;
+			}
+			.compare-table-container {
+				.swipe-text {
+					display: none;
+				}
+				.vpn-logo-container {
+					visibility: hidden;
+				}
+				.gradient-right {
+					display: none;
+				}
+				.carousel-cell {
+					th {
+						min-width: 150px;
+						width: 150px;
+					}
+					td {
+						min-width: 150px;
+						width: 150px;
+					}
+					tbody:first-child {
+						tr {
+							&:first-child {
+								td {
+									&:first-child {
+										box-shadow: none;
+									}
+									border: 0;
+								}
+								background: #006ADE;
+							}
+						}
+					}
+					.table-key {
+						width: 100% !important;
+						min-width: 0 !important;
+					}
+				}
+			}
+			.results-bar-container {
+				display: block !important;
+			}
+			.cta-bar {
+				display: block;
+			}
+		}
+		.compare-result-container.vpn-count-3 {
+			.compare-table-container {
+				.carousel-cell {
+					td {
+						min-width: 200px;
+						width: 200px;
+					}
+				}
+			}
+			.results-bar {
+				td {
+					min-width: 200px;
+				}
+			}
+			.cta-bar {
+				td {
+					min-width: 200px;
+				}
+			}
+		}
+		.compare-result-container.vpn-count-2 {
+			.compare-table-container {
+				.carousel-cell {
+					td {
+						min-width: 300px;
+						width: 300px;
+					}
+				}
+			}
+			.results-bar {
+				td {
+					min-width: 300px;
+				}
+			}
+			.cta-bar {
+				td {
+					min-width: 300px;
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.page-template-page-vpn-comparisons {
+		.pro-item {
+			font-size: 16px;
+		}
+		.con-item {
+			font-size: 16px;
+		}
+		.pros-container {
+			padding-right: 2rem;
+		}
+		.cons-container {
+			padding: 0 2rem;
+		}
+		.comp-item {
+			padding: 2rem 2rem;
+		} 
+		.btn-container {
+			.review-btn {
+				 font-size: 16px;
+			}
+			.compare-blue-btn {
+				font-size: 14px;
+			}
+		}
+		.compare-result-container {
+			.vpn-table-container {
+				width: 1170px;
+				margin: 0 auto;
+			}
+			.compare-table-container {
+				.carousel-cell {
+					.table-key {
+						width: 100% !important;
+					}
+				}
+			}
+			.results-bar {
+				table {
+					.title {
+						padding-left: 1.5rem !important;
+						h2 {
+						
+							margin-bottom: 0.5rem;
+                            //padding-top: 1rem;
+						}
+					}
+					td {
+						min-width: 165px;
+    					width: 165px;
+					}
+				}
+			}
+			.cta-bar {
+				table {
+					.title {
+						padding-left: 1.5rem !important;
+						h2 {
+						
+							margin-bottom: 2rem;
+							padding-top: 1rem;
+						}
+					}
+					td {
+						min-width: 165px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 768px) {
+	.page-template-page-vpn-comparisons {
+		.view-more-collapse {
+			display:none;
+		}
+		.compare-result-container {
+			.result-logos.mobile {
+				width: 600px;
+				margin: 0 auto;
+				margin-bottom: 2rem;
+			}
+			.result-logos {
+				.vpn-linkout {
+					.logo-container {
+						img {
+							height: 40px;
+						}
+					}
+				}
+			}
+			.compare-table-container {
+				.carousel-cell {
+					border-radius:10px;
+					border-bottom: 1px solid $lightGrey3;
+					tbody:last-child {
+						tr {
+							&:last-child {
+								td {
+									&:first-child {
+										border-bottom-left-radius: 10px;
+									}
+									&:last-child {
+										border-bottom-right-radius: 10px;
+									}
+								}
+							}
+						}
+					}
+					th {
+						min-width: 165px;
+						width: 165px;
+					}
+					td {
+						min-width: 165px;
+						width: 165px;
+					}
+					.table-key {
+						min-width: 165px !important;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 992px) {
+	.page-template-page-vpn-comparisons {
+		.compare-result-container {
+			.compare-table-container {
+				.carousel-cell {
+					.table-key {
+						min-width: 225px !important;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (min-width: 1280px) {
+	.page-template-page-vpn-comparisons {
+		.compare-result-container.vpn-count-3 {
+			.compare-table-container {
+				.carousel-cell {
+					td {
+						min-width: 250px;
+						width: 250px;
+					}
+				}
+			}
+			.results-bar {
+				td {
+					min-width: 250px;
+				}
+				.title {
+					min-width: 0;
+				}
+			}
+			.cta-bar {
+				td {
+					min-width: 250px;
+				}
+				.title {
+					min-width: 0;
+				}
+			}
+		}
+		.compare-result-container.vpn-count-2 {
+			.compare-table-container {
+				.carousel-cell {
+					td {
+						min-width: 400px;
+						width: 400px;
+					}
+				}
+			}
+			.results-bar {
+				td {
+					min-width: 400px;
+				}
+				.title {
+					min-width: 0;
+				}
+			}
+			.cta-bar {
+				td {
+					min-width: 400px;
+				}
+				.title {
+					min-width: 0;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $mobile-screen) and (max-width: 1024px) {
+
+	.results-bar-container {
+		display:none !important;
+	}
+		
+}
+
+@media screen and (max-width: $mobile-screen) {
+
+	.page-template-page-vpn-comparisons {
+		.compare-result-container {
+			.results-bar-container {
+				position: fixed;
+				top: auto;
+				bottom: 0;
+				-webkit-overflow-scrolling: touch;
+				overflow-x: scroll; 
+				width:100%;
+				background-color: $white;
+
+				.container {
+					padding:0;
+				}
+				.title {
+					display:none;
+				}
+
+				.results-bar {
+					border:none;
+					box-shadow: none;
+					margin-bottom: 0;
+				}
+				table {
+					width: 100%;
+				}
+			}
+		}
+		tbody {
+			&.collapse-item {
+				display:none;
+			}
+		}
+	}
+}
+
+//VPN COMPARE FOOTER STUFF
+
+.vpn-compare-footer-container {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: -181px;
+	transition: all ease-in-out 0.5s;
+	.vpn-compare-footer {
+		opacity: 0;
+		transition: all ease-in-out 0.5s;
+	}
+	&.slide-toggle{
+		bottom: 0;
+		.vpn-compare-footer{
+			opacity: 1;
+		}
+	}
+}
+
+.vpn-compare-footer {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 0;
+	background: white;
+	box-shadow: 0px -2px 11px rgba(0, 0, 0, 0.167725);
+	padding: 1rem 0;
+	.compare-text {
+		color: #9F9F9F;
+		text-transform: uppercase;
+		font-weight: 600;
+		font-size: 12px;
+		margin-bottom: 0.75rem;
+		margin-left: 3.25rem;
+	
+	}
+	.vpn-item-container {
+		height: 36px !important;
+		width: calc(33.33% - 1rem);
+		margin-right: 1rem;
+		background: #F6F6F6;
+		border: 1px dashed #979797;
+		padding: 0;
+		div {
+			border: none;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			background-size: cover;
+			background-position: center;
+			transition: all;
+			transition-duration: 200ms;
+		}
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+	.vpn-item-container.is-set {
+		border: none;
+		div {
+			&:before {
+				content: " ";
+				background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' class='cancel' viewBox='0 0 20 20' fill='white'%3E%3Cpath fill-rule='evenodd' d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z' clip-rule='evenodd' /%3E%3C/svg%3E");
+				background-color: #E40201;
+				height: 1.5rem;
+				width: 1.5rem;
+				color: white;
+				position: absolute;
+				bottom: -0.75rem;
+				right: -0.5rem;
+				border-radius: 9999px;
+				padding: 0.2rem;
+				background-origin: content-box;
+			}
+		}
+	}
+	.slider-mobile {
+		display: flex;
+		align-items: center;
+		.arrows-container {
+			flex-shrink: 0;
+			margin-right: 0.5rem;
+			svg {
+				height: 3rem;
+				width: 3rem;
+			}
+			button {
+				border: none;
+				background: transparent;
+				display: flex;
+				align-items: center;
+				padding: 0;
+			}
+			.arrow-prev {
+				display: none !important;
+			}
+		}
+		.vpn-slider-container {
+			width: 100%;
+			position: relative;
+			margin-left: 2.5rem;
+			.vpn-slider {
+				order: 1;
+				flex-grow: 0;
+				width: 100%;
+				&:after {
+					content: "flickity";
+					display: none;
+				}
+				.flickity-slider {
+					button {
+						&:last-child {
+							visibility: hidden;
+						}
+					}
+				}
+			}
+			.flickity-button {
+				&:disabled {
+					display: none;
+				}
+				left: -3rem;
+			}
+			.flickity-prev-next-button {
+				width: 3rem;
+				height: 3rem;
+			}
+			.flickity-viewport {
+				overflow-x: clip;
+				overflow-y: visible;
+			}
+			.is-less {
+				opacity: 0.3;
+				cursor: auto;
+				pointer-events: none;
+			}
+		}
+		.btn-container {
+			flex-shrink: 0;
+			.compare-red-btn {
+				color: white;
+				font-weight: bold;
+									font-family: $btn-font-family;
+				font-size: 13px;
+				background: #E40201;
+				border-radius: 5px;
+				border: none;
+				padding: 1rem 0.5rem;
+				letter-spacing: 1px;
+				line-height: 1;
+				transition: all;
+				transition-duration: 200ms;
+				margin-left: -1px;
+				&:disabled {
+					background: #B7B7B7;
+					cursor: auto;
+					pointer-events: none;
+				}
+				&:hover {
+					opacity: 0.75;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 425px) {
+	.vpn-compare-footer {
+		.vpn-item-container {
+			height: 45px !important;
+		}
+		.slider-mobile {
+			.btn-container {
+				.compare-red-btn {
+					padding-top: 1.25rem;
+					padding-bottom: 1.25rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	.vpn-compare-footer {
+		border-top: 4px solid #E40201;
+		.compare-text {
+			text-align: center;
+			margin-left: 0;
+			color: black;
+			font-size: 15px;
+		}
+		.slider-mobile {
+			.vpn-slider-container {
+				margin-left: 0;
+				.vpn-slider {
+					&:after {
+						content: "";
+					}
+					display: flex;
+					button {
+						&:last-child {
+							display: none;
+						}
+					}
+				}
+			}
+			.btn-container {
+				.compare-red-btn {
+					padding-top: 1.25rem;
+					padding-bottom: 1.25rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.vpn-compare-footer {
+		.vpn-item-container {
+			height: 60px !important;
+			max-width: 125px;
+		}
+		.slider-mobile {
+			.vpn-slider-container {
+				.vpn-slider {
+					justify-content: space-between;
+				}
+			}
+			.btn-container {
+				.compare-red-btn {
+					padding-top: 1.5rem;
+					padding-bottom: 1.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.vpn-compare-footer {
+		padding: 2rem 0;
+		.compare-text {			
+			margin-bottom: 1.25rem;
+		}
+		.vpn-item-container {
+			margin-right: 0;
+			//max-width: 145px;
+			//height: 80px !important;
+		}
+		.slider-mobile {
+			.btn-container {
+				margin-left: 2rem;
+				.compare-red-btn {
+					padding: 1.5rem 4rem;
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 1200px) {
+	.vpn-compare-footer {
+		.container {
+			max-width: 1050px;
+			margin: 0 auto;
+		}
+		.vpn-item-container {
+			max-width: 145px;
+		}
+	}
+}
